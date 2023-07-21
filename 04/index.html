@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="get" target="_blank">
+            <label for="name">Ім'я</label>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+    
+            <label for="last-name">Прізвище</label>
+            <input type="text" name="last-name" id="last-name" placeholder="your last name" required>
+
+            <label for="phone">Номер телефону</label>
+            <input type="tel" name="phone" id="phone" placeholder="your phone" required>
+    
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+            
+            <label for="password">Пароль</label>
+            <input type="password" name="client-password" id="password" placeholder="Your password" required>
+
+            <label for="name">Підтвердіть пароль</label>
+            <input type="password" name="password" id="name" placeholder="Your password" required>
+
+            <fieldset>
+                <!-- <h2>Стать</h2> -->
+                <legend>Стать</legend>
+                <label for="sex">Чоловік</label>
+                <input type="radio" name="sex" id="sex" value="man" required>
+                <label for="sex">Жінка</label>
+                <input type="radio" name="sex" id="sex" value="woman" required>
+            </fieldset>
+            
+          
+
+            <label for="age">Вік</label>
+            <input type="number" name="age" id="age" placeholder="Your age"  max="100"  min="1" required>
+
+            <label for="date-age">Дата народження</label>
+            <input type="date" name="date-age" id="date-age" placeholder="Your date of birth"  max="100"  min="1" required>
+
+            <label for="Your-course">Курс</label>
+            <select name="Your-course" id="Your-course" required>
+                <option value="fe">Front-End</option>
+                <option value="be">Back-End</option>
+                <option value="pm">Project Management</option>
+                <option value="qam">QA Manual</option>
+            </select>
+           
+
+            <label for="adress">Повна адреса проживання</label>
+            <textarea name="adress" id="adress" cols="30" rows="10" placeholder="Країна/Область/Район/Місто(Село)/вулиця/Номер будинку(квартири)" required></textarea>
+            
+            
+            <label for="confidanctial">Я погоджуюсь з умовами конфіденційності</label>
+            <input type="checkbox" name="confidanctial[]" id="confidanctial" required><br>
+
+            <button type="submit">Зареєструватись</button>    
+            <button type="reset">Очистити форму</button>            
+        </form>
+    </div>
+    <div class="hw">
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+            <label for="color">Color</label>
+            <input type="color" value="#e66465" id="color">
+
+            <label for="file">Add file</label>
+            <input type="file"  value="#e66465" name="file" id="file">
+
+            <label for="image">image</label>
+            <input type="image" width="300" name="image" id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2D4Kv-3_H_w8MnCmMDaMpSJjklKhus3zXwNlDzCSp8OarfQGAMuyl4tHC5y9P-kZyy3c&usqp=CAU">
+
+            <label for="month">month</label>
+            <input type="month"  name="month" id="month">
+
+            <label for="number">number</label>
+            <input type="number"  name="number" id="number">
+
+            <label for="range">range</label>
+            <input type="range"  name="range" id="range" max="30" min="0">
+
+            <label for="search">search</label>
+            <input type="search"  name="search" id="search">
+
+            <label for="time">time</label>
+            <input type="time"  name="time" id="time">
+
+            <label for="url">url</label>
+            <input type="url"  name="url" id="url">
+
+            <label for="week">week</label>
+            <input type="week"  name="week" id="week">
+
+            <label for="red">red</label>
+            <input type="checkbox"  name="red[]" id="red">
+
+            <label for="white">white</label>
+            <input type="checkbox"  name="white[]" id="white">
+
+            <label for="black">black</label>
+            <input type="checkbox"  name="black[]" id="black">
+
+            <button type="submit" class="submit">Відправити форму</button>
+
+
+
+
+
+
+
+        </form>
+        
+        
+    </div>
+   
+    
+</body>
+</html>
