@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #3B3F45;
+}
+.container{
+    max-width: 536px;
+    margin: 0 auto;
+    width: 90%;
+}
+.header{
+    background: #4A4F56;
+    
+    display: block;
+    
+}
+.main-header{
+    color: #FF8984;
+    padding-top: 19px;
+    margin-bottom: 4px;
+    text-align: center
+}
+.header-text{
+    color: #FF8984;
+    padding-bottom: 12px;
+    text-align: center
+}
+
+.main-section{
+
+    
+    /* background: #3B3F45; */
+    
+}
+.section-list{
+    margin-bottom: 45px;
+    padding-top: 20px;
+      
+}
+.list{
+    color: #fff;
+    list-style: none;
+    font-size: 18px;
+    border: 1px solid #88839E;
+    max-width: 534px;
+    background-color: #88839E;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    height: 45px;
+    
+    
+    
+    
+}
+.list:hover{
+    background-color: #625E77;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.list:nth-child(2n+2){
+    background-color: #7A7593;
+}
+
+.list:active{
+    background-color: #FF8984;
+}
+.list:visited{
+    background-color: #625E77;
+    text-decoration: line-through;
+}
+
+.list-text{
+    display: inline-block;
+    font-size: 11px;
+    margin-left: 5px;
+    
+}
+input[type='checkbox']{
+    display: none;
+}
+.fake-checkbox{
+    /* background: #fff;
+    border: 3px solid #fff;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px; */
+    padding: 11px 12px 13px 12px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+.fake-checkbox::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 16px;
+}
+input[type='checkbox']:checked + .fake-checkbox::before{
+    content: url(../images/check.png);
+    text-align: center;
+    
+}
+input[type='checkbox']:checked + .fake-checkbox{
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+/* input[type='checkbox']:checked + .fake-checkbox{
+    display: inline-block;
+    background-image: url(https://spng.pngfind.com/pngs/s/19-198591_checkbox-comments-check-mark-icons-noun-project-hd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+.button{
+    border: none;
+    background: #4A4F56;
+    color: #FF8984;    
+    padding: 12px 213px 12px 204px;
+    text-align: center;  
+    width: 100%;
+        
+}
