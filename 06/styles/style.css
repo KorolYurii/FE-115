@@ -123,6 +123,8 @@ input[type='checkbox']:checked + .fake-checkbox{
     background-position: center;
 } */
 .button{
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     border: none;
     background: #4A4F56;
     color: #FF8984;    
@@ -132,4 +134,12 @@ input[type='checkbox']:checked + .fake-checkbox{
     width: 100%;
     height: 45px;
     max-width: 534px;    
+}
+.button:hover{
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.button:active{
+    background-color: #FF8984;
+    color: #fff;
 }
