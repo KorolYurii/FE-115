@@ -129,5 +129,6 @@ input[type='checkbox']:checked + .fake-checkbox{
     padding: 12px 213px 12px 204px;
     text-align: center;  
     width: 100%;
+    height: 45px;
         
 }
