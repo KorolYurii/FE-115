@@ -302,6 +302,18 @@ a{
 .pm-list-item{
     list-style: none;
     display: flex;
+    align-items: center;
+}
+.list-icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 35px;
+    height: 35px;
+    background-color: #f90;
+    border-radius: 10px;
+    color: white;
+    border: solid #f90;
 }
 .pm-list-text{
     display: flex;
