@@ -385,4 +385,10 @@ a{
    
     color:#BCD0E5; 
 }
+button{
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
 
