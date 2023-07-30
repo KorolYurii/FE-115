@@ -150,7 +150,7 @@ a{
 .image{
     margin-top: 70px;
     float: right;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 .get-started{
     text-decoration: none;
