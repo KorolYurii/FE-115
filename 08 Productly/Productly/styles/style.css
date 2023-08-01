@@ -13,7 +13,7 @@ html,body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-   /* background: red;  */
+   background: red; 
     height: 100vh;
     
 }
@@ -50,7 +50,7 @@ a{
 }
 .main-logo{
     display: inline-block;
-
+    width: 200px;
 }
 .main-nav-section{
     display: inline-block;
@@ -71,12 +71,8 @@ a{
     text-align: center;   
 }
 .auyhorize-list{
-    /* display: inline-block;
-    
-    text-align: right;
-    margin: 0 0 0 auto;
+    display: inline-block;
     vertical-align: super;
-     */
 }  
  
 .list{
@@ -105,14 +101,17 @@ a{
 }
 
 .button{
+    display: inline-block;
     text-decoration: none;
     padding: 13px 25px;    
     border: 1px solid #BCD0E5;
     border-radius: 4px;
-    color:  #2F281E;
-    
+    color:  #2F281E;    
     font-size: 16px;
     font-weight: 600;
+}
+.logo-link{
+    display: inline-block;
 }
 .up{
     background-color: #F90;
@@ -128,7 +127,7 @@ a{
     
 }
 .main-header{
-    margin-top: 0;
+    /* margin-top: 0; */
     padding-top: 167px;
     margin-bottom: 30px;
     color: #2F281E;
@@ -136,6 +135,7 @@ a{
     font-weight: 700;
 }
 .text{
+    width: 500px;
     margin-bottom: 33px;
     color: #544837;
     font-size: 18px;
@@ -149,6 +149,7 @@ a{
 .image{
     margin-top: 70px;
     float: right;
+    width: 644px;
 
     /* margin-bottom: 100px; */
 }
@@ -165,6 +166,8 @@ a{
     font-weight: 700;    
 }
 .second-section{
+    border-top: 99px;
+    background: #fff;
     background-image: url(../images/bg.svg);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -173,7 +176,7 @@ a{
 }
 .second-header{
     text-align: center;
-    padding-top: 99px;
+    /* padding-top: 99px; */
     margin-top: 0;
     margin-bottom: 30px;
 }
@@ -181,6 +184,7 @@ a{
     display: flex;
     justify-content: space-between;
     padding-left: 0;
+    margin-bottom: 70px;
 }
 .tools{
     list-style: none;
@@ -223,7 +227,7 @@ a{
     color: #544837;
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 70px;
+    
 }
 .sign-up{
     padding-bottom: 70px;
