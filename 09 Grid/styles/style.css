@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: red;
+}
+h2{
+    text-align: center;
+    font-family: Delius Unicase;
+    font-size: 36px;
+    
+    font-weight: 400;
+    
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 90%;
+}
+.architectural-header{
+    margin-bottom: 80px;
+}
+.architectural-section{
+    background: #fff;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.architectural{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 370px);
+    gap: 30px;
+    
+    
+}
+img{
+    display: block;
+    width: 100%;
+    border-radius: 25px;
+    
+}
+.architectural-item{
+    position: relative;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .3s;
+    cursor: pointer;
+}
+.architectural-item .item-top, .item-bottom{
+    position: relative;
+    z-index: 1;
+}
+.architectural-item .item-top{
+    opacity: 0;
+    transition: .3s;
+}
+.architectural-item:hover .item-top{
+    opacity: 1;
+    transition: .3s;
+}
+.architectural-item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.short{
+    grid-column: span 1;
+    position: relative;
+}
+.architectural-item:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 25px;
+    background: var(--blure, linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.50%));
+    /* opacity: 0; */
+    z-index: 10;
+    transition: .3s;
+    
+}
+.architectural-item:hover::before{
+    opacity: 0;
+    transition: .3s;
+    cursor: pointer;
+    
+}
+.long{
+    grid-column: span 2;
+    position: relative;
+}
+
+.high{
+    grid-row: span 2;
+    position: relative;
+}
+.long-high{
+    grid-column: span 2;
+    grid-row: span 2;
+    position: relative;
+    
+    
+}
+.item-top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.item-bottom{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.still-life-photography{
+    background: #fff;
+}
+.still-life{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 370px);
+    gap: 30px;
+    padding-bottom: 80px;
+}
+.portrait-and-fashion-photography{
+    background: #fff;
+}
+.fashion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 370px);
+    gap: 30px;
+    padding-bottom: 80px;
+}
+.name, .date{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.date{
+    color: var(--gray-5, #E0E0E0);
+    font-family: Roboto;
+    font-size: 20px;    
+    font-weight: 400;
+    
+}
