@@ -7,7 +7,7 @@
 
 body{
     font-family: 'PT Sans', sans-serif;
-    background: red;    
+    /* background: red;     */
 }
 
 .container{
@@ -203,6 +203,7 @@ section{
     border-top: 1px solid #BFBFBF;
     border-bottom: 1px solid #BFBFBF;
     padding: 20px 15px;
+    
 }
 .animation{
     position: relative;
@@ -225,4 +226,7 @@ section{
 }
 .light{
     backface-visibility: hidden;
+}
+.using{
+    padding-bottom: 70px;
 }
