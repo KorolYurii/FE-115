@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="account">
+        <div class="container">
+            <h1 class="main-header">Create an Account</h1>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <div class="flex">
+                    <div class="inline">
+                        <label class="label-text" for="first-name">First Name</label>
+                        <input class="input" type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="inline">
+                        <label class="label-text" for="last-name">Last Name</label>
+                        <input class="input" type="text" name="last-name" id="last-name">
+                    </div>
+                </div>
+                              
+                <div>
+                    <label class="label-text" for="email">E-mail</label>
+                    <input class="input w100" type="email" name="email" id="email">
+                </div>    
+                
+    
+                <span class="description">We'll never share your email with anyone else.                    
+                </span>
+                <div class="form-box">
+                    <div class="inline w21">
+                        <input class="inline-input" type="radio" id="male" name="sex" value="male">
+                        <label class="checkbox" for="male"><p class="label-text">Male</p></label>
+                    </div>
+                    
+                    <div class="inline">
+                        <input class="inline-input" type="radio" name="sex" id="female" value="female">
+                        <label class="checkbox" for="female"><p class="label-text">Female</p></label>
+                    </div>
+                    
+                    
+                </div>
+                <div class="flex">
+                    <div class="inline">
+                        <label class="label-text" for="country">Country</label>
+                        <img class="select-item" src="./images/Right.svg" alt="">
+                        <select class="input" name="country" id="country">
+                            <option value="">Select</option>
+                            <option value="">Ukraine</option>
+                            <option value="">Poland</option>
+                            <option value="">Moldova</option>
+                            <option value="">France</option>
+                        </select>
+                    </div>
+                    
+                    <div class="inline">
+                        <label class="label-text" for="city">City</label>
+                        <input class="input" type="text" name="city" id="city">
+                    </div>
+                </div>
+                
+                
+
+                <button class="button" type="submit">Sign Up</button>
+            </form>
+            <p class="text">By clicking the 'Sign Up' button, you confirm that you accept our <br>
+                <a class="text-link" href="#">Terms of Use</a> and 
+                <a class="text-link" href="#">Privacy Policy</a>.
+            </p>
+            <div class="footer">
+                <span class="footer-text">Have an account?</span>
+                <a class="footer-link" href="">Log In</a>
+            </div>
+        </div>
+    </section>
+    <section class="profile">
+        <div class="container">
+            <h1 class="main-header">Profile</h1>
+            
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <div class="main-add">
+                    <img class="photo" src="./images/photo.jpg" alt="">
+                    <div class="add-file"> 
+                        <img class="camera" src="./images/Photo Camera.svg" alt="">
+                        <label class="add-content" for="file">
+                            <input class="input add" type="file" name="file" id="file" placeholder=" ">
+                        </label>                   
+                        <img class="trash" src="./images/Trash.svg" alt="">
+                        <button class="reset" type="reset"></button>
+                        <span class="description">Up to 1 MB (300x300 px)</span>
+                    </div>
+                </div>
+                
+                <div class="flex">
+                    <div class="inline">
+                        <label class="label-text" for="name">Name</label>
+                        <input class="input" type="text" name="name" id="name">
+                    </div>
+                    <div class="inline">
+                        <label class="label-text" for="mail">Email</label>
+                        <input class="input" type="email" name="mail" id="mail">
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="inline">
+                        <label class="label-text" for="country">Country</label>
+                        <img class="select-item" src="./images/Right.svg" alt="">
+                        <select class="input" name="country" id="country">
+                            <option value="">Select</option>
+                            <option value="">Ukraine</option>
+                            <option value="">Poland</option>
+                            <option value="">Moldova</option>
+                            <option value="">France</option>
+                        </select>
+                    </div>
+                    
+                    <div class="inline">
+                        <label class="label-text" for="town">City</label>
+                        <input class="input" type="text" name="town" id="town">
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="inline">
+                        <label class="label-text" for="first-name">Zip Code</label>
+                        <input class="input" type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="inline">
+                        <label class="label-text" for="last-name">Phone Number</label>
+                        <input class="input" type="tel" name="last-name" id="last-name">
+                    </div>
+                </div>
+                <button class="update-button" type="submit">Update</button>
+            </form>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
