@@ -54,6 +54,11 @@ body{
     border-radius: 4px;
     padding: 7px 10px;
     width: 100%;
+    color: #545454;
+    font-family: 'Inter','sans-serif';
+    font-size: 15px;     
+    line-height: 22px; 
+    letter-spacing: -0.2px;    
     
 }
 .input:active{
@@ -222,9 +227,11 @@ input[type='tel']:focus,
 input[type='file']:focus,
 select:focus{
     outline: 1px solid #007BFF;
+    
 }
+
 select.input{
-    padding: 5px;
+    
     color: #545454;
     font-family: 'Inter', 'sans-serif';
     font-size: 15px;    
@@ -234,12 +241,15 @@ select.input{
 select{
     appearance: none;
     cursor: pointer;
-    
+    background-image: url(../images/Right.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: right -6px top 50%, 0 0;
+    background-size:  auto, 100%; 
 }
 
 .select-item{
     position: absolute;
-    top: 26px;
+    top: 29px;
     right: -16px;
 }
 input[type="radio"]{
