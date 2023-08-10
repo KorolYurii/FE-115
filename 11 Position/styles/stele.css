@@ -7,7 +7,7 @@
 
 body{
     font-family: 'PT Sans', 'sans-serif';  
-    background: red;                                                                                 */
+    /* background: red;                                                                                 */ */
 }
 
 .container{
@@ -235,11 +235,11 @@ section{
     padding-top: 137px;
     padding-bottom: 70px;
 }
-.page-wrapper{
+.main-content{
     background-image: url(../images/bg-picture.svg);
     background-repeat: no-repeat;
    
-    background-size: 700px;
+    background-size: 500px;
     /* height: 300vh; */
 
     background-attachment: fixed;
