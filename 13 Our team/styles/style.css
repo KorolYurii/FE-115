@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    margin: 0 auto;
+    width: 1030px;
+    max-width: 90%;
+}
+.motto{
+    color:  #898F8F;
+    text-align: center;
+    
+    font-family: Raleway;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.main-header{
+    color: #FC0;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    line-height: 66px; 
+    text-transform: uppercase;    
+}
+.icon{
+    text-align: center;
+    margin-bottom: 105px;
+    position: relative;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.icon::before{
+    content: '';
+    background: #FC0;
+    height: 2px;
+    width: 210px;
+    position: absolute;
+    right: 52%;
+    top: 10px;
+    
+}
+.icon::after{
+    content: '';
+    background: #FC0;
+    height: 2px;
+    width: 210px;
+    position: absolute;
+    left: 52%;
+    top: 10px;
+}
+.photo{
+    position: relative;
+}
+.photo::before{
+    content: '';
+    background: #FC0;
+    height: 2px;
+    width: 100vh;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 50%;
+    top: 44%;
+}
+.top-left{
+    position: absolute;
+    border-top: #FC0 1px solid;
+    border-left: #FC0 1px solid;
+    padding: 50px;
+    top: -15px;
+    left: -15px;
+}
+.top-right{
+    position: absolute;
+    border-top: #FC0 1px solid;
+    border-right: #FC0 1px solid;
+    padding: 50px;
+    top: -15px;
+    right: -15px;
+}
+.bottom-left{
+    position: absolute;
+    border-bottom: #FC0 1px solid;
+    border-left: #FC0 1px solid;
+    padding: 50px;
+    top: 316px;
+    left: -15px;
+}
+.bottom-right{
+    position: absolute;
+    border-bottom: #FC0 1px solid;
+    border-right: #FC0 1px solid;
+    padding: 50px;
+    top: 316px;
+    right: -15px; 
+}
+.about{
+    margin-left: 85px;
+}
+.name{
+    color: #666;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    position: relative;
+    font-weight: 900;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+}
+.name::after{
+    content: '';
+    background: #FC0;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    right: 40%;
+    top: 165%;
+
+}
+.profesion{
+    color: #666;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 36px; 
+    text-transform: capitalize;
+}
+.social-list{
+    text-align: center;
+}
+.social-item{
+    display: inline-block;
+    margin-bottom: 40px;
+    
+}
+.social-item:not(:last-child){
+    margin-right: 5px;
+}
+.text{
+    color: #333;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    width: 430px;
+    margin-bottom: 49px;
+    position: relative;
+}
+.text::after{
+    position: absolute;
+    content: '';
+    background: linear-gradient(#FC0 20%, #fff 20% 30%, #FC0 30% 70%, #fff 70% 80%, #FC0 80% );
+    padding: 25px 2px;
+    transform: rotate(90deg);
+    top: 95%;
+    left: 50%;
+}
+.button-box{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.button{
+    color: #666;
+    
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    text-align: center; 
+    padding: 5px 10px; 
+    border: 1px solid #FC0;
+   
+}
