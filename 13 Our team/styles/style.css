@@ -49,7 +49,7 @@ ul, li{
     content: '';
     background: #FC0;
     height: 2px;
-    width: 100vh;
+    width: 90vh;
     position: absolute;
     transform:  translate(-50%, 50%) rotate(90deg);
     left: 50%;
