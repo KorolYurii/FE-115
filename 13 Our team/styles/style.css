@@ -36,13 +36,26 @@ ul, li{
 }
 .icon{
     text-align: center;
-    margin-bottom: 105px;
+    margin-bottom: 40px;
     position: relative;
 }
 .content{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
+.content::before{
+    
+    content: '';
+    background: #FC0;
+    height: 2px;
+    width: 100vh;
+    position: absolute;
+    transform:  translate(-50%, 50%) rotate(90deg);
+    left: 50%;
+    top: 50%;
+}
+
 .icon::before{
     content: '';
     background: #FC0;
@@ -64,8 +77,14 @@ ul, li{
 }
 .photo{
     position: relative;
+    margin-top: 80px;
+    
+    
+    
 }
-.photo::before{
+
+
+/* .photo::before{
     content: '';
     background: #FC0;
     height: 2px;
@@ -74,7 +93,7 @@ ul, li{
     transform: rotate(90deg);
     left: 42%;
     top: 50%;
-}
+} */
 .top-left{
     position: absolute;
     border-top: #FC0 1px solid;
@@ -108,9 +127,12 @@ ul, li{
     right: -15px; 
 }
 .about{
-    margin-left: 85px;
+    /* margin-left: 85px; */
+    /* border-left: #FC0 1px solid;
+    padding-left: 10px; */
 }
 .name{
+    margin-top: 80px;
     color: #666;
     text-align: center;
     font-family: Roboto;
