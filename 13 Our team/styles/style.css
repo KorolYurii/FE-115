@@ -50,6 +50,7 @@ ul, li{
     background: #FC0;
     height: 2px;
     width: 90vh;
+    max-width: 560px;
     position: absolute;
     transform:  translate(-50%, 50%) rotate(90deg);
     left: 50%;
