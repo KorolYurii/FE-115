@@ -95,13 +95,15 @@ h2{
   height: 68px;
   border: 1px solid #1565D81A;
   border-radius: 16px;
+  position: relative;
+  margin-bottom: 30px;
 }
 .main-icon{
   width: 34px;
-  height: 34px;
-  padding: 15px;
-  
-  
+  height: 34px;  
+  position: absolute;
+  top: 17px;
+  left: 15px;
 }
 .footer{
   background: #16133D;
@@ -131,4 +133,7 @@ h2{
 a svg{
   width: 38px;
   height: 38px;
+}
+.logo-icon{
+  margin-top: 40px;
 }
