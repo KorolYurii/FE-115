@@ -1,5 +1,5 @@
 <svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <symbol  width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="building-blue" width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="building-blue">
     <path id="Vector" d="M36.7767 13.3215V32.9997C36.7767 34.325 35.6279 35.3997 34.2113 35.3997H5.99167C4.57508 35.3997 3.42625 34.325 3.42625 32.9997C3.42625 14.3965 3.42457 17.8814 3.43187 13.3215H36.7767Z" fill="#D1E7FF"/>
     <path id="Vector_2" d="M36.7767 13.3215V17.8664C36.7767 18.8499 35.934 19.6647 34.8827 19.6687C34.871 19.6687 5.34078 19.6687 5.31946 19.6687C4.26844 19.6644 3.42626 18.8496 3.42626 17.8664C3.42626 16.5546 3.4253 17.4602 3.43187 13.3215H36.7767Z" fill="#B9DCFF"/>
