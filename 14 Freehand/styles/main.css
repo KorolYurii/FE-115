@@ -90,11 +90,18 @@ h2{
   font-weight: 600;
   
 }
-.main-icon{
+.icon-wrapper{
   width: 68px;
   height: 68px;
   border: 1px solid #1565D81A;
   border-radius: 16px;
+}
+.main-icon{
+  width: 34px;
+  height: 34px;
+  padding: 15px;
+  
+  
 }
 .footer{
   background: #16133D;
