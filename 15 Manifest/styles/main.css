@@ -400,25 +400,25 @@ body{
   }
   .blog-grid{
     display: flex; 
-    flex-direction: column;  
+    flex-direction: column-reverse;  
     flex-flow: wrap; 
   }
-  
-  .white-arrow{
-    display: block;
-    order: 1;
-  }
   .order{
-    order: 0;
-  }
-  .technology{
-    order: 2;
-  }
-  .window{
-    display: block;
     order: 3;
   }
+
+  .white-arrow{    
+    order: 4;
+  }
   
+  /* .technology{
+    order: 1;
+  }
+  .window{
+    
+    order: 2;
+  }
+   */
 
   
   .top-posts{
