@@ -382,8 +382,8 @@ body{
     width: 95%;
     max-width: 576px;
   }
-  .nav{
-    
+  .header-text{
+    font-size: 40px;
   }
   .form-wrapper{
     margin-left: auto;
@@ -399,13 +399,56 @@ body{
     text-align: center;
   }
   .blog-grid{
-    display: block;
+    display: block;    
+  }
+  
+  .reverse{
+    flex-direction: column-reverse;
   }
   .top-posts{
     display: block;
   }
   .grid-posts{
     display: block;
+    padding-bottom: 70px;
+  }
+  .post-box{
+    display: block;
+  }
+  .popular-grid{
+    display: block;
+    padding-bottom: 0;
+  }
+
+
+
+
+
+
+  .top-popular{
+    display: block;
+  }
+  .popular-box-header{  
+    font-size: 28px;
+  }
+
+  .main-box-text {
+    margin-bottom: 50px;
+  }
+  .about-us-box{
+    text-align: inherit;
+  }
+  .footer-text{
+    font-size: 32px;
+  }
+  .phone{
+    font-size: 22px;
+  }
+  .email{
+    font-size: 22px;
+  }
+  .bottom-text{
+    font-size: 20px;
   }
 
 }
