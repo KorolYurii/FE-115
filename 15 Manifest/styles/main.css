@@ -330,6 +330,16 @@ body{
   .nav-list-wrapper{
     display: none;
   }
+  .blog-grid{
+    grid-template-columns: repeat(2, 48%);
+  }
+  .technology-text{
+    padding-top: 0;
+  }
+  .main-technology-text{
+    width: auto;
+    margin-top: 10px;
+  }
   .grid-posts{
     display: block;
   }
