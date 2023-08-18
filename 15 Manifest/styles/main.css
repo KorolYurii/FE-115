@@ -399,12 +399,28 @@ body{
     text-align: center;
   }
   .blog-grid{
-    display: block;    
+    display: flex; 
+    flex-direction: column;  
+    flex-flow: wrap; 
   }
   
-  .reverse{
-    flex-direction: column-reverse;
+  .white-arrow{
+    display: block;
+    order: 1;
   }
+  .order{
+    order: 0;
+  }
+  .technology{
+    order: 2;
+  }
+  .window{
+    display: block;
+    order: 3;
+  }
+  
+
+  
   .top-posts{
     display: block;
   }
