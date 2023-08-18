@@ -1,0 +1,401 @@
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  background: red;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1170px;
+}
+
+.header{
+  background: #fff;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.nav-item {
+  display: inline-block;
+}
+.nav-item:not(:first-child) {
+  margin-left: 42px;
+}
+.nav-link{
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;  
+  letter-spacing: 4.2px;
+  text-transform: uppercase;
+}
+.nav-link:hover{
+  text-decoration: underline;
+  
+}
+.nav-list-wrapper{
+  display: inline-block;
+}
+.nav-wrapper{
+  display: inline-flex;
+}
+.form-wrapper{
+ margin-left: 84px;
+}
+
+.bg-section{
+  background-image: url('../images/bg-image.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-origin: border-box;
+  background-size: cover;
+}
+.header-text{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 48px;
+  max-width: 700px;
+  font-weight: 600;
+  line-height: 64px; 
+  letter-spacing: 2.4px;
+  padding-top: 100px;
+  
+  padding-bottom: 380px;
+}
+.blog{
+  background: #fff;
+  
+  
+}
+.blog-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1r);
+  row-gap: 50px;
+  column-gap: 30px;
+  padding-bottom: 90px ;
+}
+.main-header{
+  color:  #000;
+  padding-top: 90px;
+  font-family:'Red Hat Display', sans-serif;
+  font-size: 48px;
+  padding-bottom: 50px;
+  font-weight: 400;
+  line-height: 64px; 
+  letter-spacing: 2.4px;
+  background: #fff;
+}
+
+.technology-text{
+  color:  #7B7B7B;  
+  font-family: Lato;
+  font-size: 16px; 
+  line-height: 166%; 
+  letter-spacing: 1.6px;
+  padding-top: 85px;
+  margin-bottom: 30px;
+}
+.technology-header{
+  color:  #000;
+  font-family: Red Hat Display;
+  font-size: 23px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 166%; 
+  letter-spacing: 2.3px;
+  width: 330px;
+}
+.date{
+  color: #7B7B7B;  
+  font-family: Lato;
+  font-size: 16px; 
+  line-height: 166%; 
+  letter-spacing: 1.6px; 
+   
+}
+.main-technology-text{
+  color:  #565656;  
+  font-family: Lato;
+  font-size: 16px;  
+  font-weight: 400;
+  line-height: 166%; 
+  letter-spacing: 0.8px;
+  margin-top: 50px;
+  width: 445px
+}
+.posts{
+  background: #fff;
+  
+}
+.top-posts{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.post-header{  
+  color:  #000;
+  font-family: Red Hat Display;
+  font-size: 28px;  
+  font-weight: 600;
+  line-height: 166%; 
+  letter-spacing: 2.8px;
+}
+.view-link{
+  color:  #7B7B7B;  
+  font-family: Lato;
+  font-size: 16px;  
+  line-height: 166%;
+  letter-spacing: 1.6px;  
+  vertical-align: sub;
+}
+.grid-posts{
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr); */
+  gap: 30px;
+  padding-bottom: 90px;
+}
+.box-text{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 26px;
+}
+.post-text,
+.post-time{
+  color:  #7B7B7B;  
+  font-family: Lato;
+  font-size: 12px; 
+  font-weight: 400;
+  line-height: 166%; 
+  letter-spacing: 1.2px;
+  
+}
+
+.box-header{
+  color:  #000;
+  font-family: Red Hat Display;
+  font-size: 22px;  
+  font-weight: 500;
+  line-height: 166%; 
+  letter-spacing: 2.2px;
+  margin-bottom: 20px;
+}
+.popular{
+  background: #fff;
+  padding-bottom: 90px;
+}
+.top-popular{
+  margin-bottom: 46px;
+  display: flex;
+  justify-content: space-between;
+}
+.popular-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 30px;
+  padding-bottom: 50px;
+}
+.popular-box-header{
+  color: #000;
+  font-family: Red Hat Display;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: 166%;
+  letter-spacing: 2.4px;
+}
+.main-box-text{
+  color:  #565656;  
+  font-family: Lato;
+  font-size: 16px;  
+  font-weight: 400;
+  line-height: 166%; 
+  letter-spacing: 0.8px
+}
+.button{
+  color: #FFF;  
+  font-family: Lato;
+  font-size: 16px;
+  padding: 10px 45px;
+  font-weight: 700;
+  line-height: 166%; 
+  letter-spacing: 1.6px;
+  border: none;
+  background: #565656;
+  display: block;  
+  margin: 0 auto;
+  cursor: pointer;
+}
+.about{
+  background: #fff;
+  
+  padding-bottom: 90px;
+}
+.about-box{
+  display: flex;
+  justify-content: space-between;
+}
+.about-desiner{
+  color:  #000;
+  max-width: 470px;
+  font-family: Red Hat Display;
+  font-size: 23px;
+  line-height: 166%; 
+  letter-spacing: 2.3px;
+  margin-bottom: 20px;
+  max-width: 405px;
+}
+.about-us{
+  color:  #565656;  
+  font-family: Lato;
+  font-size: 19px;  
+  line-height: 32px; 
+  letter-spacing: 0.95px;
+  max-width: 470px;
+  margin-bottom: 32px;
+}
+.footer{
+  background: #F4F4F4;
+  display: flex;
+}
+.adress{
+  padding-top: 70px;
+  max-width: 375px;
+  margin-bottom: 20px;
+  
+}
+.footer-text{
+  color:  #000;
+  
+  font-family: Red Hat Display;
+  font-size: 48px;
+  margin-bottom: 30px;
+  line-height: 64px; 
+  letter-spacing: 2.4px;
+}
+.phone{
+  color: #000; 
+  font-family: Lato;
+  font-size: 16px;  
+  line-height: 166%; 
+  letter-spacing: 1.6px;
+  display: block;
+  margin-bottom: 15px;
+}
+.email{
+  color: #000; 
+  font-family: Lato;
+  font-size: 16px;  
+  line-height: 166%; 
+  letter-spacing: 1.6px;
+}
+.footer-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-list{
+  display: flex;
+}
+.social-item{
+  transition: .3s;
+}
+.social-item:not(:last-child){
+  margin-right: 23px;
+}
+.social-item:hover{
+  --p1: #ffffff;
+  --p2: #565656;
+  transform: scale(1.2);
+}
+
+.bottom-text{
+  color: #000;  
+  font-family: Lato;
+  font-size: 12px;
+  padding-bottom: 30px;
+  line-height: 166%; 
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+
+@media screen and (max-width: 968px){
+  .nav-list-wrapper{
+    display: none;
+  }
+  .grid-posts{
+    display: block;
+  }
+  .post-box{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+
+  }
+  .central{
+    flex-direction: row-reverse;
+  }
+  .about-box{
+    display: block;
+  }
+  .about-us-box{
+    text-align: right;
+    max-width: auto;
+  }
+  .footer-flex{
+    display: block;
+    text-align: center;
+    
+  }
+  .adress{
+    margin: 0 auto;
+    margin-bottom: 52px;
+  }
+  .social-list{
+    margin: 0 auto;
+    display: inline-flex;
+    margin-bottom: 40px;
+  }
+}
+
+
+@media screen and (max-width: 576px){
+  .container{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 576px;
+  }
+  .nav{
+    
+  }
+  .form-wrapper{
+    margin-left: auto;
+  }
+  .bg-section{
+    background-image: url('../images/bg-image-mob.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-origin: border-box;
+    background-size: cover;
+  }
+  .main-header{
+    text-align: center;
+  }
+  .blog-grid{
+    display: block;
+  }
+  .top-posts{
+    display: block;
+  }
+  .grid-posts{
+    display: block;
+  }
+
+}
