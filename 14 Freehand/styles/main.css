@@ -151,3 +151,9 @@ a svg{
 .footer-logo-icon{
   margin-top: 40px;
 }
+.social-icon{
+  transition: .3s;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}
