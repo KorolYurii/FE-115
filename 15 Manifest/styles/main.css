@@ -1,8 +1,8 @@
 
 body{
   font-family: 'Lato', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
-  background: red;
+  /* font-family: 'Red Hat Display', sans-serif; */
+  /* background: red; */
 }
 
 .container {
@@ -57,7 +57,7 @@ body{
 .header-text{
   font-family: 'Red Hat Display', sans-serif;
   font-size: 48px;
-  max-width: 700px;
+  max-width: 710px;
   font-weight: 600;
   line-height: 64px; 
   letter-spacing: 2.4px;
@@ -101,7 +101,7 @@ body{
 }
 .technology-header{
   color:  #000;
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
   font-size: 23px;
   margin-bottom: 15px;
   font-weight: 500;
@@ -131,6 +131,9 @@ body{
   background: #fff;
   
 }
+.posts img{
+  max-height: 250px;
+}
 .top-posts{
   display: flex;
   justify-content: space-between;
@@ -138,7 +141,7 @@ body{
 }
 .post-header{  
   color:  #000;
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
   font-size: 28px;  
   font-weight: 600;
   line-height: 166%; 
@@ -178,7 +181,7 @@ body{
 
 .box-header{
   color:  #000;
-  font-family: Red Hat Display;
+  font-family:'Red Hat Display', sans-serif;
   font-size: 22px;  
   font-weight: 500;
   line-height: 166%; 
@@ -194,6 +197,17 @@ body{
   display: flex;
   justify-content: space-between;
 }
+.popular-text,
+.popular-time{
+  color:  #7B7B7B;
+  
+  font-family: Lato;
+  font-size: 12px;
+  
+  
+  line-height: 166%; 
+  letter-spacing: 1.2px;
+}
 .popular-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -203,7 +217,7 @@ body{
 }
 .popular-box-header{
   color: #000;
-  font-family: Red Hat Display;
+  font-family:'Red Hat Display', sans-serif;
   font-size: 24px;
   margin-bottom: 20px;
   font-weight: 500;
@@ -244,7 +258,7 @@ body{
 .about-desiner{
   color:  #000;
   max-width: 470px;
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
   font-size: 23px;
   line-height: 166%; 
   letter-spacing: 2.3px;
@@ -273,7 +287,7 @@ body{
 .footer-text{
   color:  #000;
   
-  font-family: Red Hat Display;
+  font-family:'Red Hat Display', sans-serif;
   font-size: 48px;
   margin-bottom: 30px;
   line-height: 64px; 
