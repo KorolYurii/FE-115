@@ -46,6 +46,9 @@ body{
 .form-wrapper{
  margin-left: 84px;
 }
+label:hover{
+  cursor: pointer;
+}
 
 .bg-section{
   background-image: url('../images/bg-image.png');
