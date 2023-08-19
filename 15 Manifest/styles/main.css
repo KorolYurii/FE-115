@@ -375,6 +375,11 @@ label:hover{
   .about-us-box{
     text-align: right;
     max-width: auto;
+    margin-left: auto;
+  }
+  .about-us{
+    margin-left: auto;
+
   }
   .footer-flex{
     display: block;
