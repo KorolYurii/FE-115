@@ -96,7 +96,9 @@
             </div>
             
         </header>
-        <button type="button" class="humburger" onclick="toggleMenu()"></button>
+        <button type="button" class="humburger" onclick="toggleMenu(event)">
+        <span class=""></span>
+        </button>
         <main>
             
                 <section class="bg-section"> 
@@ -325,9 +327,13 @@
     </div>
 
     <script>
-        function toggleMenu(){
+        function toggleMenu(e){
+            e.preventDefault();
+            // e.target.classList.toggle('active');
+            document.querySelector('.humburger').classList.toggle('active');
             document.querySelector('.nav-list-wrapper').classList.toggle('active');
             document.querySelector('.logo').classList.toggle('menu-open');
+
         }
     </script>
 </body>
