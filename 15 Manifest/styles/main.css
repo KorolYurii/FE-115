@@ -51,7 +51,7 @@ label:hover{
 }
 
 .bg-section{
-  background-image: url('../images/bg-image.png');
+  background-image: url('../images/1440/bg-image.jpg');
   background-repeat: no-repeat;
   background-position-x: center;
   background-origin: border-box;
@@ -344,6 +344,15 @@ label:hover{
 }
 
 @media screen and (max-width: 968px){
+  .bg-section{
+    background-image: url('../images/768/bg-image.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-origin: border-box;
+    background-size: cover;
+  }
+  
+  
   .nav-list-wrapper{
     display: none;
   }
@@ -379,6 +388,7 @@ label:hover{
   }
   .about-us{
     margin-left: auto;
+    max-width: none;
 
   }
   .footer-flex{
@@ -411,7 +421,7 @@ label:hover{
     margin-left: auto;
   }
   .bg-section{
-    background-image: url('../images/bg-image-mob.png');
+    background-image: url('../images/320/bg-image.jpg');
     background-repeat: no-repeat;
     background-position-x: center;
     background-origin: border-box;
