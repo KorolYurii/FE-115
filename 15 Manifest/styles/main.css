@@ -615,6 +615,9 @@ body{
   .about-desiner{
     max-width: initial;
   }
+  .about-desiner-wrapper{
+    margin-bottom: 50px;
+  }
   .footer-flex{
     display: block;
     text-align: center;
