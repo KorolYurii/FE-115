@@ -51,6 +51,7 @@ body{
   padding-bottom: 10px;
 }
 
+
 .line{
   display: none;
   position: absolute;
@@ -66,7 +67,12 @@ body{
 .nav-link:hover + .line{
   display: block;
   
+  
 }
+.current{
+  display: block;
+}
+
 
 
 .nav-list-wrapper{
@@ -175,6 +181,9 @@ body{
 }
 .posts img{
   max-height: 250px;
+}
+.post-box img{
+  height: 100%;
 }
 .top-posts{
   display: flex;
