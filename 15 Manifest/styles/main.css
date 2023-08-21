@@ -380,7 +380,7 @@ body{
 .social-item:hover{
   --p1: #ffffff;
   --p2: #565656;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 
 .bottom-text{
@@ -395,7 +395,9 @@ body{
 
 
 @media screen and (max-width: 968px){
-
+.current{
+  display: none;
+}
   .humburger span::before,
 .humburger span,
 .humburger span::after{
@@ -488,8 +490,8 @@ body{
   .humburger{
     position: fixed;
     right: 25px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     font-size: 30px;
     top: 30px;    
     cursor: pointer;
@@ -702,6 +704,10 @@ body{
   .popular-grid{
     display: block;
     padding-bottom: 0;
+  }
+
+  .main-technology-text a{
+    display: none;
   }
 
 
