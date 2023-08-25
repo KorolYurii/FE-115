@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1130;
+}
+.page-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+}
+
+.header{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    max-height: 80px;
+    width: 75%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    
+
+    .main-nav{
+        display: flex;
+        .nav-list{
+            display: flex;
+            .list-item{
+                display: flex;              
+                
+            }
+            .list-item:not(:last-child){
+                margin-right: 20px;
+            }  
+        }
+       
+    }
+    .lang{
+        a{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100px;
+            svg{
+
+            }
+            span{
+                text-transform: capitalize;
+            }
+
+        }
+    }
+    
+    .nav-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-setting{
+            margin-left: 50px;
+            .nav-setting-list{
+                display: flex;
+                .nav-setting-item:not(:first-child){
+                    margin-left: 20px;
+                }
+            }
+        }
+        .photo{
+            margin-left: 50px;
+        }
+    }
+
+
+
+
+} 
+.aside{
+    
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    .logo{
+        padding-top: 30px;
+        padding-right: 15px;
+        padding-left: 14px;
+        margin-bottom: 40px;
+        .logo-name{
+            vertical-align: super;
+            color: #392C72;            
+            font-size: 18px;            
+            font-weight: 500;
+            
+        }
+    }
+    .dashboard{
+        margin-bottom: 30px;
+        padding-left: 15px;
+        span{
+            
+        }
+        .dashboard-text{
+            margin-left: 20px;
+            
+        }
+    }
+}
+.apps-header{
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+.apps-list{
+    margin-bottom: 30px;
+    .apps-item{
+        .apps-link{
+            .apps-content{
+                padding: 10px 15px;
+                position: relative;
+                .apps-name{
+                    margin-left: 20px;
+                    font-size: 16px;
+                    vertical-align: super;
+                }
+                span{
+                    font-size: 26px;
+                    color: #4F4F4F;
+                }
+                
+            }
+        }
+    }
+}
+.counter{
+    position: absolute;
+    left: 35px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: #6FCF97;
+    border-radius: 50%;
+    .counter-number{
+        text-align: center;
+        padding-top: 2px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+.auth-header{
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+.auth-list{
+    margin-bottom: 30px;
+    .auth-item{
+        .auth-link{
+            .auth-content{
+                padding: 10px 15px;
+                .auth-name{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+.interface-header{
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+.interface-list{
+    margin-bottom: 30px;
+    .interface-item{
+        .interface-link{
+            .interface-content{
+                padding: 10px 15px;
+                .interface-name{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

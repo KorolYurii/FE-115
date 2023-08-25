@@ -1,0 +1,118 @@
+
+body{
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.section{
+    display: grid;
+    grid-template-columns: repeat(4, 200px) ;
+    grid-template-rows: repeat(9, 300px );
+    gap: 30px;
+}
+.image{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+.full-card{
+    position: relative;
+    animation-name: 'animate';
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    &.active {
+        animation-play-state: running;
+        
+        
+    }
+    
+    .front{ 
+        background: #fff;
+        border: 1px solid #000;
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        
+        .header-card{
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+            .number-card{
+                margin-left: 4px;
+            }
+            .ten{
+                margin-left: -2px;
+                
+            }
+        }
+        .number-card{
+           color: #f00;
+           font-size: 20px;
+           font-weight: 600;
+           display: flex;
+           flex-direction: column;
+           
+        }
+        .black{
+            color: #000;
+        }
+        .central{
+            
+            text-align: center;
+        }
+    }
+
+}
+
+.front, .image{
+    position: absolute;
+    transition: all 1s ease;
+}
+.full-card:hover .image{
+    transform: rotateY(180deg);
+}
+
+.full-card:hover .front{
+    transform: rotateY(0deg);
+}
+
+.image{
+    backface-visibility: hidden;
+    border: 1px solid #000;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+.king{
+    position: relative;
+}
+.king svg{
+   position: absolute;
+   top: -90px;
+
+}
+.w-h40{
+    width: 200px;
+    height: 58px;
+}
+.bottom{    
+    transform:rotate(-180deg);
+}
+
+
+@keyframes animate {
+    from{ 
+        transform: rotateY(180deg);   
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
