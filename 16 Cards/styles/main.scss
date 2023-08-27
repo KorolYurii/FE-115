@@ -21,12 +21,8 @@ body{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-play-state: paused;
-
-    &.active {
-        animation-play-state: running;
-        
-        
-    }
+    
+    
     
     .front{ 
         background: #fff;
@@ -70,10 +66,26 @@ body{
     }
 
 }
+.full-card.active {
+    animation-play-state: running;
+    transition: all linear 1s;
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    // animation-fill-mode: backwards;
+    transition: all 2s ease;
+    transform: rotateY(180deg);
+    
+    
+
+    
+    
+}
 
 .front, .image{
     position: absolute;
-    transition: all 1s ease;
+    transition: all 2s ease;
 }
 .full-card:hover .image{
     transform: rotateY(180deg);
@@ -89,6 +101,7 @@ body{
     width: 200px;
     height: 300px;
     border-radius: 10px;
+    transform: rotateY(0deg);
     
 }
 .king{
@@ -108,11 +121,22 @@ body{
 }
 
 
+
 @keyframes animate {
-    from{ 
-        transform: rotateY(180deg);   
-    }
-    to{
+    0%{
         transform: rotateY(0deg);
+        
+        
+    }
+    50%{
+        transform: rotateY(90deg);
+        
+    }
+    100%{
+          
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        
+        
     }
 }
