@@ -64,7 +64,7 @@ body {
 .full-card.active {
   animation-play-state: running;
   transition: all linear 1s;
-  animation-name: animate;
+  animation-name: "animate";
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-direction: normal;

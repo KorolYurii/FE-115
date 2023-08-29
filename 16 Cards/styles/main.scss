@@ -8,6 +8,7 @@ body{
     grid-template-columns: repeat(4, 200px) ;
     grid-template-rows: repeat(9, 300px );
     gap: 30px;
+    
 }
 .image{
     width: 200px;
@@ -25,6 +26,7 @@ body{
     
     
     .front{ 
+        
         background: #fff;
         border: 1px solid #000;
         width: 200px;
@@ -35,6 +37,7 @@ body{
         justify-content: space-around;
         backface-visibility: hidden;
         transform: rotateY(180deg);
+        
         
         .header-card{
             display: flex;
@@ -69,7 +72,7 @@ body{
 .full-card.active {
     animation-play-state: running;
     transition: all linear 1s;
-    animation-name: animate;
+    animation-name: 'animate';
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-direction: normal;
