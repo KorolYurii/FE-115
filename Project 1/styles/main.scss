@@ -14,13 +14,14 @@ body{
     background-repeat: no-repeat;
     background-position-x: center;
     background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
     background-size: cover;
     .container{
 
         .main-header{
             color:  #FFF;
-            padding-top: 295px;
-            
+            padding-top: 295px;            
             font-size: 48px;
             text-align: center;            
             font-weight: 700;
@@ -75,6 +76,7 @@ body{
                         vertical-align: middle;
                     }
                     
+                    
                 }
             }
            
@@ -116,6 +118,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
         .logo{
             padding-top: 32px;
             padding-bottom: 32px;
@@ -127,7 +130,7 @@ body{
                 font-weight: 700;
                 line-height: 28px; 
                 letter-spacing: 2.4px;
-                text-transform: uppercase;    
+                text-transform: uppercase;                
             }
         }
         .main-nav{
@@ -155,6 +158,8 @@ body{
     background-repeat: no-repeat;
     background-position-x: center;
     background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
     background-size: cover;
     .container{
         display: flex;
@@ -201,6 +206,7 @@ body{
         .photo{
             display: flex;
             flex-direction: column;
+            -ms-flex-direction: column;
             gap: 16px;
 
             img{
@@ -214,10 +220,13 @@ body{
         }
     }
 }
-.actions{
+.actions-section{
     background: #333;
     height: 306px;
     .container{
+        .hidden{
+            visibility: hidden;
+        }
         
         
         
@@ -276,6 +285,8 @@ body{
     background-repeat: no-repeat;
     background-position-x: center;
     background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
     background-size: cover;
     .container{
         padding-top: 220px;
@@ -333,14 +344,17 @@ body{
 }
 .spain{
     background-image: url('../image/spain-1859434_1280\ 1-min.jpg');
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
     background-position-x: center;
     background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
     background-size: cover;
     .container{
         padding-top: 220px;
         padding-bottom: 120px;
         display: flex;
+        
         justify-content: flex-end;
         .spain-content{
             background: rgba(35, 35, 35, 0.90);
@@ -398,6 +412,8 @@ body{
     background-repeat: no-repeat;
     background-position-x: center;
     background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
     background-size: cover;
     .container{
         padding-top: 120px;
@@ -419,7 +435,7 @@ body{
                 width: 100%;
                 display: block;
             }
-            .review-setion{
+            .review-section{
                 background: var(--dark-grey, #333);
                 padding-top: 48px;
                 padding-left: 60px;
@@ -491,6 +507,49 @@ body{
     --p1: #5373FD;        
 }
 @media screen and (max-width: 968px) {
+     
+.header-section .container .main-header{ 
+    font-size: 42px;   
+    padding-top: 80px;            
+}
+.header-section .container .motto{ 
+    font-size: 18px;              
+}
+.header-section .container .search{
+    margin-bottom: 70px;
+}                            
+.header-section .container .search .label-search .input-search{ 
+    width: 100%;
+    max-width: 350px;                        
+}
+                  
+    .main-nav{
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 75%;
+        height: 100vh;
+        background: #4d4c4c;
+        z-index: 3;
+        transform: translateX(100%);
+        
+    }
+    .choose .container .info .choose-header{
+        padding-top: 0;
+        font-size: 30px;
+    }
+    .actions-section .container .actions .actions-content svg{
+        max-height: 46px;
+    }
+    .actions-section .container .actions .actions-content .actions-text{
+        font-size: 26px;
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-align: center
+    }
     .choose .container{
         gap: initial;
     }
@@ -500,4 +559,68 @@ body{
     .choose .container .photo img:last-child {
         margin-left: initial; 
     }
+    .review .container .review-content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .header-section .container .main-header{
+        font-size: 32px;
+    }
+    .header-section .container .motto {
+    font-size: 14px;
+    }
+    .header-section .container .search .label-search{
+        padding: 10px 0;
+    }
+    .header-section .container .search .label-search .input-search{
+        width: 100%;
+        max-width: 100px;
+        padding-left: 5px;
+        font-size: 0px
+    }
+    
+    .header-section .container .search .label-search .button-search {
+        padding: 5px 5px;
+    }
+    .header-section .container .search .label-search .button-search svg{
+        display: none;
+    }
+    .choose .container{
+        flex-direction: column-reverse;
+
+    }
+    .choose .container .photo{
+        flex-direction: initial;
+        flex-wrap: wrap
+
+    }
+    .choose .container .photo img:first-child{
+        width: 100%;
+    }
+    .choose .container .photo img:last-child{
+        margin-left: auto;
+        width: 100%;
+    }
+    .choose .container .info .choose-header{
+        margin-top: 15px;
+    }
+    .actions-section{
+        height: auto;
+    }
+    .actions-section .container .actions{    
+        flex-direction: column;
+    }
+    .actions-section .container .actions .line{
+        display: none;
+    }
+    .actions-section .container .actions .actions-content{
+        margin-top: auto;
+    }
+    .review .container .review-content .review-section{
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+
 }
