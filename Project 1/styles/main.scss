@@ -19,6 +19,7 @@ body{
 .burger{
     display: none;
 }
+
 .header-section{
     background-image: url('../image/HeaderBackground-min.jpg');
     background-repeat: no-repeat;
@@ -66,8 +67,10 @@ body{
                     max-width: 647px;                    
                     line-height: 20px; 
                     letter-spacing: 2.8px;
+                    font-family: 'Josefin Sans', sans-serif;
                     
                 }
+                
                 .button-search{   
                     color: #FFF;        
                     background: linear-gradient(to bottom left, #486BFE 40%, #5373FD 60%);
@@ -80,10 +83,14 @@ body{
                     line-height: 20px;
                     letter-spacing: 1.4px;
                     text-transform: uppercase;
-                    cursor: pointer;
+                    cursor: pointer;                    
                     svg{
                         vertical-align: middle;
                     }                   
+                }
+                .button-search:hover{
+                    transition: all .3s ease;
+                    transform: scale(1.1);
                 }
             }          
         }
@@ -153,6 +160,12 @@ body{
                         letter-spacing: 1.4px;
                         text-transform: uppercase;
                     }
+                    
+                }
+                .nav-item:hover{
+                    transform: scale(1.1);
+                    transition: all .3s ease;
+                    text-shadow: #FFF 1px 0 10px;
                 }
             }
         }
@@ -174,7 +187,7 @@ body{
         gap: 136px;
         padding-bottom: 124px;
         .info{
-
+            
             .choose-header{
                 padding-top: 76px;
                 margin-bottom: 24px;
@@ -207,6 +220,10 @@ body{
                 margin-top: 32px;
                 margin-bottom: 76px;
                 cursor: pointer;
+            }
+            .choose-button:hover{
+                transition: all .3s ease;
+                transform: scale(1.1);
             }
 
         }
@@ -349,6 +366,10 @@ body{
                 margin-left: 32px;
                 cursor: pointer;
             }
+            .madrid-button:hover{
+                transition: all .3s ease;
+                transform: scale(1.1);
+            }
         }
     }
 }
@@ -413,6 +434,10 @@ body{
                 text-transform: uppercase;
                 margin-left: 32px;
                 cursor: pointer;
+            }
+            .spain-button:hover{
+                transition: all .3s ease;
+                transform: scale(1.1);
             }
         }
     }
@@ -677,6 +702,8 @@ body{
     }
     .choose .container{
         gap: initial;
+        padding-top: 30px;
+        padding-bottom: initial;
     }
     .choose .container .photo img{
         max-width: 250px;
@@ -684,11 +711,19 @@ body{
     .choose .container .photo img:last-child {
         margin-left: initial; 
     }
+    .choose .container .info{
+        margin-right: 20px;
+    }
     .review .container .review-content{
         flex-direction: column;
         -ms-flex-direction: column;
         align-items: center;
     }
+    .review .container .review-content .review-img{
+        margin-bottom: 30px;
+        max-width: initial;
+    }
+    
 }
 @media screen and (max-width: 576px) {
     .header-section .container .main-header{
@@ -752,5 +787,6 @@ body{
         padding-top: 20px;
         padding-left: 15px;
     }
+    
 
 }

@@ -67,6 +67,7 @@ body {
   max-width: 647px;
   line-height: 20px;
   letter-spacing: 2.8px;
+  font-family: "Josefin Sans", sans-serif;
 }
 .header-section .container .search .label-search .button-search {
   color: #FFF;
@@ -84,6 +85,10 @@ body {
 }
 .header-section .container .search .label-search .button-search svg {
   vertical-align: middle;
+}
+.header-section .container .search .label-search .button-search:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
 }
 .header-section .container .scroll-link-wrapper {
   width: 110px;
@@ -146,6 +151,11 @@ body {
   letter-spacing: 1.4px;
   text-transform: uppercase;
 }
+.header .container .main-nav .nav-list .nav-item:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  text-shadow: #FFF 1px 0 10px;
+}
 
 .choose {
   background-image: url("../image/WhyBackground (1)-min.jpg");
@@ -196,6 +206,10 @@ body {
   margin-top: 32px;
   margin-bottom: 76px;
   cursor: pointer;
+}
+.choose .container .info .choose-button:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
 }
 .choose .container .photo {
   display: -webkit-box;
@@ -320,6 +334,10 @@ body {
   margin-left: 32px;
   cursor: pointer;
 }
+.madrid .container .madrid-content .madrid-button:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
 
 .spain {
   background-image: url("../image/spain-1859434_1280 1-min.jpg");
@@ -382,6 +400,10 @@ body {
   text-transform: uppercase;
   margin-left: 32px;
   cursor: pointer;
+}
+.spain .container .spain-content .spain-button:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
 }
 
 .review {
@@ -659,6 +681,8 @@ body {
 
   .choose .container {
     gap: initial;
+    padding-top: 30px;
+    padding-bottom: initial;
   }
 
   .choose .container .photo img {
@@ -669,10 +693,19 @@ body {
     margin-left: initial;
   }
 
+  .choose .container .info {
+    margin-right: 20px;
+  }
+
   .review .container .review-content {
     flex-direction: column;
     -ms-flex-direction: column;
     align-items: center;
+  }
+
+  .review .container .review-content .review-img {
+    margin-bottom: 30px;
+    max-width: initial;
   }
 }
 @media screen and (max-width: 576px) {
