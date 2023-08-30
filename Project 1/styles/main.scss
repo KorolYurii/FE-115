@@ -476,6 +476,7 @@ body{
                 background:  #333;
                 padding-top: 48px;
                 padding-left: 60px;
+                padding-right: 60px;
                 .review-name{
                     color:  #FFF;                    
                     margin-bottom: 16px;
@@ -723,6 +724,9 @@ body{
         margin-bottom: 30px;
         max-width: initial;
     }
+    .review .container .review-content .review-section{
+        padding-bottom: 30px;
+    }
     
 }
 @media screen and (max-width: 576px) {
@@ -784,8 +788,7 @@ body{
         margin-top: auto;
     }
     .review .container .review-content .review-section{
-        padding-top: 20px;
-        padding-left: 15px;
+        padding: 20px 15px;
     }
     
 
