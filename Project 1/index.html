@@ -14,7 +14,36 @@
 </head>
 <body>
     <div class="page-wrapper">
+        
         <section class="header-section">
+            <header class="header">
+                <div class="container">
+                    <div class="logo">
+                        <a class="logo-link" href="#">Bhromaon</a>
+                    </div>
+                    <nav class="main-nav ">                    
+                            <a class="logo-link mobile" href="#">Bhromaon</a>                    
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Who We Are</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">What We Do</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Travel With Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        
+                    </nav>
+                </div>
+                <button type="button" class="burger" onclick="toggleMenu(event)">
+                    <span></span>
+                </button>
+            </header>
             <div class="container">
                 <h1 class="main-header">Bhromaon</h1>
                 <p class="motto">Safe Travel Anywhere</p>
@@ -32,11 +61,9 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <span>search</span>
-                            
+                            <span>search</span>                            
                         </a>
-                    </label>                        
-                    
+                    </label>                     
                 </div>
                 <div class="scroll-link-wrapper">
                     <a class="scroll-link" href="#footer">
@@ -47,37 +74,10 @@
                             </g>
                         </svg>
                     </a>
-                </div>
-                
-                
+                </div>               
             </div>
-
         </section>
-        <header class="header">
-            <div class="container">
-                <div class="logo">
-                    <a class="logo-link">Bhromaon</a>
-                </div>
-                <nav class="main-nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Who We Are</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">What We Do</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Travel With Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </nav>
-
-            </div>
-
-        </header>
+        
         <main>
             <section class="choose">
                 <div class="container">
@@ -240,6 +240,16 @@
             
         </footer>
     </div>
+    <script>
+        function toggleMenu(e){
+            e.preventDefault();
+            // e.target.classList.toggle('active');
+            document.querySelector('.burger').classList.toggle('active');
+            document.querySelector('.main-nav').classList.toggle('active');
+            document.querySelector('.logo').classList.toggle('menu-open');
+
+        }
+    </script>
     
 </body>
 </html>
