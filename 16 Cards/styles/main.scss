@@ -69,22 +69,26 @@ body{
     }
 
 }
-.full-card.active {
-    animation-play-state: running;
-    transition: all linear 1s;
+// .full-card.active {
+//     animation-play-state: running;    
+//     animation-name: 'animate';
+//     animation-duration: 2s;
+//     animation-iteration-count: 1;
+//     animation-direction: normal;
+//     animation-fill-mode: backwards;
+//     transition: all 2s ease;
+//     transform: rotateY(180deg);
+    
+// }
+.full-card.active .image{
     animation-name: 'animate';
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    // animation-fill-mode: backwards;
-    transition: all 2s ease;
     transform: rotateY(180deg);
-    
-    
-
-    
-    
 }
+.full-card.active .front{
+    animation-name: 'animate';
+    transform: rotateY(0deg);
+}
+
 
 .front, .image{
     position: absolute;
