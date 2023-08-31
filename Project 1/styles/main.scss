@@ -381,6 +381,7 @@ body{
     -moz-background-origin: border-box;
     -webkit-background-origin: border-box;
     background-size: cover;
+
     .container{
         padding-top: 220px;
         padding-bottom: 120px;
@@ -429,7 +430,7 @@ body{
                 text-align: center;
                 padding: 20px 56px;
                 background: linear-gradient(45deg, #486BFE 40%, #5373FD 40%);
-                font-family: Aleo;
+                font-family: 'Aleo', serif;
                 font-size: 16px;                
                 line-height: 20px; 
                 letter-spacing: 1.12px;
@@ -441,9 +442,10 @@ body{
                 transition: all .3s ease;
                 transform: scale(1.1);
             }
-        }
     }
 }
+
+
 .review{
     background-image: url('../image/BG-min.jpg');
     background-repeat: no-repeat;
@@ -675,12 +677,12 @@ body{
         background-color: yellow;
         color: blue;
     }
-    .madrid .container .madrid-content{
-        padding-right: 20px;
+    .madrid .container .madrid-content .madrid-text{
+        max-width: 87%;
     }
-    .spain .container .spain-content{
-        padding-right: 20px;
-        
+    
+    .spain .container .spain-content .spain-text{
+        max-width: 87%;
     }
     .choose .container .info .choose-header{
         padding-top: 0;

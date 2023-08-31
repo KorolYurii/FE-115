@@ -359,8 +359,9 @@ body {
   padding-bottom: 44px;
   width: 100%;
   max-width: 648px;
+  padding-right: 20px;
 }
-.spain .container .spain-content .country {
+.spain .container .country {
   padding-top: 44px;
   margin-bottom: 16px;
   color: #FFF;
@@ -370,7 +371,7 @@ body {
   line-height: 28px;
   letter-spacing: 2px;
 }
-.spain .container .spain-content .spain-header {
+.spain .container .spain-header {
   color: #FFF;
   padding-left: 32px;
   font-size: 20px;
@@ -379,7 +380,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-.spain .container .spain-content .spain-text {
+.spain .container .spain-text {
   color: var(--white, #FFF);
   padding-left: 32px;
   font-size: 16px;
@@ -388,12 +389,12 @@ body {
   letter-spacing: 1.6px;
   margin-bottom: 24px;
 }
-.spain .container .spain-content .spain-button {
+.spain .container .spain-button {
   color: #FFF;
   text-align: center;
   padding: 20px 56px;
   background: linear-gradient(45deg, #486BFE 40%, #5373FD 40%);
-  font-family: Aleo;
+  font-family: "Aleo", serif;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 1.12px;
@@ -401,7 +402,7 @@ body {
   margin-left: 32px;
   cursor: pointer;
 }
-.spain .container .spain-content .spain-button:hover {
+.spain .container .spain-button:hover {
   transition: all 0.3s ease;
   transform: scale(1.1);
 }
@@ -652,12 +653,12 @@ body {
     color: blue;
   }
 
-  .madrid .container .madrid-content {
-    padding-right: 20px;
+  .madrid .container .madrid-content .madrid-text {
+    max-width: 87%;
   }
 
-  .spain .container .spain-content {
-    padding-right: 20px;
+  .spain .container .spain-content .spain-text {
+    max-width: 87%;
   }
 
   .choose .container .info .choose-header {
