@@ -28,7 +28,12 @@ body{
     -moz-background-origin: border-box;
     -webkit-background-origin: border-box;
     background-size: cover;
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     .container{
 
@@ -58,6 +63,7 @@ body{
             .label-search{
                 padding: 20px 0;
                 background-color: #FFF;
+                
 
                 .input-search{ 
                     padding-left: 36px;
@@ -69,10 +75,14 @@ body{
                     letter-spacing: 2.8px;
                     font-family: 'Josefin Sans', sans-serif;
                     
+                    
                 }
                 
                 .button-search{   
                     color: #FFF;        
+                    background: linear-gradient(to bottom left, #486BFE 40%, #5373FD 60%);
+                    background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #486BFE), color-stop(60%, #5373FD));
+                    background: -o-linear-gradient(top right, #486BFE 40%, #5373FD 60%);
                     background: linear-gradient(to bottom left, #486BFE 40%, #5373FD 60%);
                     padding: 16px 24px;
                     margin-right: 5px;
@@ -89,8 +99,12 @@ body{
                     }                   
                 }
                 .button-search:hover{
+                    -webkit-transition: all .3s ease; 
+                    -o-transition: all .3s ease; 
                     transition: all .3s ease;
-                    transform: scale(1.1);
+                    -webkit-transform: scale(1.05);
+                    -ms-transform: scale(1.05);
+                    transform: scale(1.05);
                 }
             }          
         }
@@ -130,7 +144,7 @@ body{
         justify-content: space-between;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center;
+        align-items: center;   
         
         .logo{
             padding-top: 32px;
@@ -184,9 +198,12 @@ body{
         display: -ms-flexbox;        
         display: flex;
         padding-top: 124px;
-        gap: 136px;
+        // gap: 136px;
         padding-bottom: 124px;
+        
+
         .info{
+            margin-right: 136px;
             
             .choose-header{
                 padding-top: 76px;
@@ -209,6 +226,9 @@ body{
             }
             .choose-button{                
                 background: linear-gradient(45deg, #486BFE 40%, #5373FD 40%);
+                background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #486BFE), color-stop(60%, #5373FD));
+                background: -o-linear-gradient(top right, #486BFE 40%, #5373FD 60%);
+                background: linear-gradient(to bottom left, #486BFE 40%, #5373FD 60%);
                 color: #FFF;
                 text-align: center;                
                 font-family: Aleo;
@@ -222,7 +242,11 @@ body{
                 cursor: pointer;
             }
             .choose-button:hover{
+                -webkit-transition: all .3s ease; 
+                -o-transition: all .3s ease; 
                 transition: all .3s ease;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
                 transform: scale(1.1);
             }
 
@@ -245,7 +269,7 @@ body{
                 margin-left: 74px;
             }
         }
-    }
+    }    
 }
 .actions-section{
     background: #333;
@@ -278,6 +302,7 @@ body{
                 width: 100%;
                 margin-top: 107px;
                 background: #333333;
+                max-width: 425px;
                 svg{
                     display: block;
                     margin: 0 auto;
@@ -315,9 +340,11 @@ body{
     -moz-background-origin: border-box;
     -webkit-background-origin: border-box;
     background-size: cover;
+
     .container{
         padding-top: 220px;
         padding-bottom: 120px;
+
         .madrid-content{
             background: rgba(35, 35, 35, 0.90);
             padding-bottom: 44px;
@@ -358,6 +385,9 @@ body{
                 text-align: center;
                 padding: 20px 56px;
                 background: linear-gradient(45deg, #486BFE 40%, #5373FD 40%);
+                background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #486BFE), color-stop(60%, #5373FD));
+                background: -o-linear-gradient(top right, #486BFE 40%, #5373FD 60%);
+                background: linear-gradient(to bottom left, #486BFE 40%, #5373FD 60%);
                 font-family: Aleo;
                 font-size: 16px;                
                 line-height: 20px; 
@@ -367,7 +397,11 @@ body{
                 cursor: pointer;
             }
             .madrid-button:hover{
+                -webkit-transition: all .3s ease; 
+                -o-transition: all .3s ease; 
                 transition: all .3s ease;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
                 transform: scale(1.1);
             }
         }
@@ -385,8 +419,12 @@ body{
     .container{
         padding-top: 220px;
         padding-bottom: 120px;
+        display: -webkit-box; 
+        display: -ms-flexbox; 
         display: flex;        
-        justify-content: flex-end;
+        -webkit-box-pack: end;        
+        -ms-flex-pack: end;        
+        justify-content: flex-end; 
 
         .spain-content{
             background: rgba(35, 35, 35, 0.90);
@@ -417,7 +455,7 @@ body{
                 margin-bottom: 16px;
             }
             .spain-text{
-                color: var(--white, #FFF);
+                color:  #FFF;
                 padding-left: 32px;
                 font-size: 16px;                
                 font-weight: 300;
@@ -430,6 +468,9 @@ body{
                 text-align: center;
                 padding: 20px 56px;
                 background: linear-gradient(45deg, #486BFE 40%, #5373FD 40%);
+                background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #486BFE), color-stop(60%, #5373FD));
+                background: -o-linear-gradient(top right, #486BFE 40%, #5373FD 60%);
+                background: linear-gradient(to bottom left, #486BFE 40%, #5373FD 60%);
                 font-family: 'Aleo', serif;
                 font-size: 16px;                
                 line-height: 20px; 
@@ -439,7 +480,11 @@ body{
                 cursor: pointer;
             }
             .spain-button:hover{
+                -webkit-transition: all .3s ease; 
+                -o-transition: all .3s ease; 
                 transition: all .3s ease;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
                 transform: scale(1.1);
             }
     }
@@ -474,7 +519,7 @@ body{
             .review-img{
                 max-width: 440px;
                 width: 100%;
-                display: block;
+                
             }
             .review-section{
                 background:  #333;
@@ -588,7 +633,7 @@ body{
         right: 0;
         background-color: yellow;
         opacity: .5;
-         transition: all .5s ease;
+        transition: all .5s ease;
     }
 
     .logo-link{        
@@ -672,6 +717,12 @@ body{
     }
     .nav-link:hover{
         background-color: blue;
+        
+    }
+    .header .container .main-nav .nav-list .nav-item:hover{
+        transform: initial;
+        transition: initial;
+        text-shadow: initial;
     }
     .header .container .main-nav .nav-list .nav-item .nav-link:active{
         background-color: yellow;
@@ -797,6 +848,10 @@ body{
     }
     .review .container .review-content .review-section{
         padding: 20px 15px;
+    }
+    .mobile{
+        text-align: initial;
+        margin-left: 10px;
     }
     
 
