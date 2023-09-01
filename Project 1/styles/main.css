@@ -91,7 +91,8 @@ body {
 .header-section .container .search .label-search .button-search svg {
   vertical-align: middle;
 }
-.header-section .container .search .label-search .button-search:hover {
+.header-section .container .search .label-search .button-search:hover,
+.header-section .container .search .label-search .button-search:focus {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -160,7 +161,8 @@ body {
   letter-spacing: 1.4px;
   text-transform: uppercase;
 }
-.header .container .main-nav .nav-list .nav-item:hover {
+.header .container .main-nav .nav-list .nav-item:hover,
+.header .container .main-nav .nav-list .nav-item:focus {
   transform: scale(1.1);
   transition: all 0.3s ease;
   text-shadow: #FFF 1px 0 10px;
@@ -220,7 +222,8 @@ body {
   margin-bottom: 76px;
   cursor: pointer;
 }
-.choose .container .info .choose-button:hover {
+.choose .container .info .choose-button:hover,
+.choose .container .info .choose-button:focus {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -354,7 +357,8 @@ body {
   margin-left: 32px;
   cursor: pointer;
 }
-.madrid .container .madrid-content .madrid-button:hover {
+.madrid .container .madrid-content .madrid-button:hover,
+.madrid .container .madrid-content .madrid-button:focus {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -432,7 +436,8 @@ body {
   margin-left: 32px;
   cursor: pointer;
 }
-.spain .container .spain-button:hover {
+.spain .container .spain-button:hover,
+.spain .container .spain-button:focus {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -534,7 +539,8 @@ body {
   gap: 30px;
 }
 
-.footer-link svg:hover {
+.footer-link svg:hover,
+.footer-link svg:focus {
   --p1: #5373FD;
 }
 

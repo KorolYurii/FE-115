@@ -95,7 +95,8 @@ body{
                         vertical-align: middle;
                     }                   
                 }
-                .button-search:hover{
+                .button-search:hover,
+                .button-search:focus{
                     -webkit-transition: all .3s ease; 
                     -o-transition: all .3s ease; 
                     transition: all .3s ease;
@@ -173,7 +174,8 @@ body{
                     }
                     
                 }
-                .nav-item:hover{
+                .nav-item:hover,
+                .nav-item:focus{
                     transform: scale(1.1);
                     transition: all .3s ease;
                     text-shadow: #FFF 1px 0 10px;
@@ -238,7 +240,8 @@ body{
                 margin-bottom: 76px;
                 cursor: pointer;
             }
-            .choose-button:hover{
+            .choose-button:hover,
+            .choose-button:focus{
                 -webkit-transition: all .3s ease; 
                 -o-transition: all .3s ease; 
                 transition: all .3s ease;
@@ -393,7 +396,8 @@ body{
                 margin-left: 32px;
                 cursor: pointer;
             }
-            .madrid-button:hover{
+            .madrid-button:hover,
+            .madrid-button:focus{
                 -webkit-transition: all .3s ease; 
                 -o-transition: all .3s ease; 
                 transition: all .3s ease;
@@ -476,7 +480,8 @@ body{
                 margin-left: 32px;
                 cursor: pointer;
             }
-            .spain-button:hover{
+            .spain-button:hover,
+            .spain-button:focus{
                 -webkit-transition: all .3s ease; 
                 -o-transition: all .3s ease; 
                 transition: all .3s ease;
@@ -581,7 +586,8 @@ body{
     }
 }
 
-.footer-link svg:hover{
+.footer-link svg:hover,
+.footer-link svg:focus{
     --p1: #5373FD;        
 }
 @media screen and (max-width: 968px) {
