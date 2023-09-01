@@ -79,11 +79,8 @@ body{
                 }
                 
                 .button-search{   
-                    color: #FFF;        
-                    background: linear-gradient(to bottom left, #486BFE 40%, #5373FD 60%);
-                    background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #486BFE), color-stop(60%, #5373FD));
-                    background: -o-linear-gradient(top right, #486BFE 40%, #5373FD 60%);
-                    background: linear-gradient(to bottom left, #486BFE 40%, #5373FD 60%);
+                    color: #FFF;                   
+                    background: #5373FD;
                     padding: 16px 24px;
                     margin-right: 5px;
                     margin-top: 4px;
@@ -225,10 +222,10 @@ body{
                 letter-spacing: 1.6px;
             }
             .choose-button{                
-                background: linear-gradient(45deg, #486BFE 40%, #5373FD 40%);
+                
                 background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #486BFE), color-stop(60%, #5373FD));
                 background: -o-linear-gradient(top right, #486BFE 40%, #5373FD 60%);
-                background: linear-gradient(to bottom left, #486BFE 40%, #5373FD 60%);
+                background: linear-gradient(45deg, #486BFE 40%, #5373FD 40%);
                 color: #FFF;
                 text-align: center;                
                 font-family: Aleo;
@@ -384,10 +381,10 @@ body{
                 color:  #FFF;
                 text-align: center;
                 padding: 20px 56px;
-                background: linear-gradient(45deg, #486BFE 40%, #5373FD 40%);
                 background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #486BFE), color-stop(60%, #5373FD));
                 background: -o-linear-gradient(top right, #486BFE 40%, #5373FD 60%);
-                background: linear-gradient(to bottom left, #486BFE 40%, #5373FD 60%);
+                background: linear-gradient(45deg, #486BFE 40%, #5373FD 40%);
+
                 font-family: Aleo;
                 font-size: 16px;                
                 line-height: 20px; 
@@ -467,10 +464,10 @@ body{
                 color:  #FFF;
                 text-align: center;
                 padding: 20px 56px;
-                background: linear-gradient(45deg, #486BFE 40%, #5373FD 40%);
                 background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #486BFE), color-stop(60%, #5373FD));
                 background: -o-linear-gradient(top right, #486BFE 40%, #5373FD 60%);
-                background: linear-gradient(to bottom left, #486BFE 40%, #5373FD 60%);
+                background: linear-gradient(45deg, #486BFE 40%, #5373FD 40%);
+
                 font-family: 'Aleo', serif;
                 font-size: 16px;                
                 line-height: 20px; 
