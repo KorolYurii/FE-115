@@ -61,7 +61,11 @@ body {
   margin-bottom: 211px;
 }
 .header-section .container .search .label-search {
-  padding: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  max-width: 647px;
+  justify-content: space-between;
+  /* padding: 20px 0; */
   background-color: #FFF;
 }
 .header-section .container .search .label-search .input-search {
@@ -69,7 +73,7 @@ body {
   color: #999;
   font-size: 14px;
   width: 100%;
-  max-width: 647px;
+  max-width: 503px;
   line-height: 20px;
   letter-spacing: 2.8px;
   font-family: "Josefin Sans", sans-serif;
@@ -563,6 +567,10 @@ body {
     margin-bottom: 70px;
   }
 
+  .header-section .container .search .label-search {
+    max-width: 503px;
+  }
+
   .header-section .container .search .label-search .input-search {
     width: 100%;
     max-width: 350px;
@@ -778,7 +786,7 @@ body {
   }
 
   .header-section .container .search .label-search {
-    padding: 10px 0;
+    max-width: 350px;
   }
 
   .header-section .container .search .label-search .input-search {
