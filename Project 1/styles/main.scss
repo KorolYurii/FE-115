@@ -638,6 +638,7 @@ body{
         transition: all .5s ease;
         border-left: 4px solid #fff;
         box-sizing: border-box;
+        -webkit-box-sizing: border-box;
     }
     .logo.menu-open::after{
         display: block;
