@@ -636,6 +636,8 @@ body{
     .main-nav.active{
         transform: none;
         transition: all .5s ease;
+        border-left: 4px solid #fff;
+        box-sizing: border-box;
     }
     .logo.menu-open::after{
         display: block;
@@ -722,7 +724,7 @@ body{
     
     .nav-link{
         display: block;        
-        border: #ff0000 1px solid;
+        border: #fff 1px solid;
         border-radius: 5px;        
         width: 90%;
         margin: 0 auto;
@@ -769,7 +771,8 @@ body{
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;        
-        text-align: center
+        text-align: center;
+        
         
     }
     .header .container .main-nav .nav-list{
@@ -868,7 +871,10 @@ body{
     }
     .mobile{
         text-align: initial;
-        margin-left: 10px;
+        padding-left: 5%;
+    }
+    .logo-link{
+        font-size: 21px;
     }
     
 

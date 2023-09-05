@@ -592,6 +592,8 @@ body {
   .main-nav.active {
     transform: none;
     transition: all 0.5s ease;
+    border-left: 4px solid #fff;
+    box-sizing: border-box;
   }
 
   .logo.menu-open::after {
@@ -684,7 +686,7 @@ body {
 
   .nav-link {
     display: block;
-    border: #ff0000 1px solid;
+    border: #fff 1px solid;
     border-radius: 5px;
     width: 90%;
     margin: 0 auto;
@@ -853,6 +855,10 @@ body {
 
   .mobile {
     text-align: initial;
-    margin-left: 10px;
+    padding-left: 5%;
+  }
+
+  .logo-link {
+    font-size: 21px;
   }
 }
