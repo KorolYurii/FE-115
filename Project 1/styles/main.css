@@ -2,6 +2,10 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
   margin: 0 auto;
   width: 95%;
@@ -187,6 +191,8 @@ body {
   display: flex;
   padding-top: 124px;
   padding-bottom: 124px;
+  align-items: center;
+  justify-content: space-between;
 }
 .choose .container .info {
   margin-right: 136px;
@@ -245,12 +251,14 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 16px;
+  margin-right: 112px;
 }
 .choose .container .photo img {
   max-width: 350px;
+  width: 100%;
 }
-.choose .container .photo img:last-child {
-  margin-left: 74px;
+.choose .container .photo img:first-child {
+  margin-left: -74px;
 }
 
 .actions-section {
@@ -472,12 +480,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 180px;
+  align-items: center;
 }
 .review .container .review-content .review-img {
   max-width: 440px;
   width: 100%;
 }
 .review .container .review-content .review-section {
+  min-height: 280px;
   background: #333;
   padding-top: 48px;
   padding-left: 60px;
@@ -775,18 +785,38 @@ body {
     gap: initial;
     padding-top: 30px;
     padding-bottom: initial;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .choose .container .photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: initial;
   }
 
   .choose .container .photo img {
     max-width: 250px;
   }
 
-  .choose .container .photo img:last-child {
+  .choose .container .photo img:first-child {
     margin-left: initial;
   }
 
   .choose .container .info {
     margin-right: initial;
+    width: 100%;
+  }
+
+  .choose .container .info .choose-header-text {
+    max-width: initial;
   }
 
   .review .container .review-content {
@@ -805,6 +835,16 @@ body {
   }
 }
 @media screen and (max-width: 576px) {
+  .header-section {
+    background-image: url(../image/576px/HeaderBackground-min.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-size: cover;
+  }
+
   .header-section .container .main-header {
     font-size: 32px;
   }
@@ -830,6 +870,16 @@ body {
 
   .header-section .container .search .label-search .button-search svg {
     display: none;
+  }
+
+  .choose {
+    background-image: url("../image/576px/WhyBackground (1)-min.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-size: cover;
   }
 
   .choose .container {
@@ -861,8 +911,28 @@ body {
     width: 100%;
   }
 
+  .madrid {
+    background-image: url("../image/576px/render-1477041_1280 1 (1)-min.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-size: cover;
+  }
+
   .madrid-button {
     width: 100%;
+  }
+
+  .spain {
+    background-image: url("../image/576px/spain-1859434_1280 1-min.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-size: cover;
   }
 
   .spain-button {
@@ -884,6 +954,16 @@ body {
 
   .actions-section .container .actions .actions-content {
     margin-top: auto;
+  }
+
+  .review {
+    background-image: url("../image/576px/BG-min.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-size: cover;
   }
 
   .review .container .review-content .review-section {
