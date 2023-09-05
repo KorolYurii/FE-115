@@ -316,14 +316,14 @@ body {
 .madrid .container .madrid-content {
   background: rgba(35, 35, 35, 0.9);
   padding-bottom: 44px;
-  width: 100%;
   max-width: 648px;
+  padding-right: 20px;
+  padding-left: 32px;
 }
 .madrid .container .madrid-content .country {
   padding-top: 44px;
   margin-bottom: 16px;
   color: #FFF;
-  padding-left: 32px;
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
@@ -331,7 +331,6 @@ body {
 }
 .madrid .container .madrid-content .madrid-header {
   color: #FFF;
-  padding-left: 32px;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -340,7 +339,6 @@ body {
 }
 .madrid .container .madrid-content .madrid-text {
   color: #FFF;
-  padding-left: 32px;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -359,7 +357,6 @@ body {
   line-height: 20px;
   letter-spacing: 1.12px;
   text-transform: uppercase;
-  margin-left: 32px;
   cursor: pointer;
 }
 .madrid .container .madrid-content .madrid-button:hover,
@@ -397,12 +394,12 @@ body {
   width: 100%;
   max-width: 648px;
   padding-right: 20px;
+  padding-left: 32px;
 }
 .spain .container .country {
   padding-top: 44px;
   margin-bottom: 16px;
   color: #FFF;
-  padding-left: 32px;
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
@@ -410,7 +407,6 @@ body {
 }
 .spain .container .spain-header {
   color: #FFF;
-  padding-left: 32px;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -419,7 +415,6 @@ body {
 }
 .spain .container .spain-text {
   color: #FFF;
-  padding-left: 32px;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -438,7 +433,6 @@ body {
   line-height: 20px;
   letter-spacing: 1.12px;
   text-transform: uppercase;
-  margin-left: 32px;
   cursor: pointer;
 }
 .spain .container .spain-button:hover,
@@ -711,6 +705,36 @@ body {
     color: blue;
   }
 
+  .choose .container .info .choose-button:hover,
+.choose .container .info .choose-button:focus {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .madrid .container .madrid-content .madrid-button:hover,
+.madrid .container .madrid-content .madrid-button:focus {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .spain .container .spain-button:hover,
+.spain .container .spain-button:focus {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
   .madrid .container .madrid-content .madrid-text {
     max-width: 87%;
   }
@@ -762,7 +786,7 @@ body {
   }
 
   .choose .container .info {
-    margin-right: 20px;
+    margin-right: initial;
   }
 
   .review .container .review-content {
@@ -831,6 +855,18 @@ body {
 
   .choose .container .info .choose-header {
     margin-top: 15px;
+  }
+
+  .choose-button {
+    width: 100%;
+  }
+
+  .madrid-button {
+    width: 100%;
+  }
+
+  .spain-button {
+    width: 100%;
   }
 
   .actions-section {
