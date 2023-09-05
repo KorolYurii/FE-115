@@ -651,7 +651,7 @@ body{
         left: 0;
         bottom: 0;
         right: 0;
-        background-color: yellow;
+        background-color: #4d4c4c;
         opacity: .5;
         transition: all .5s ease;
     }
@@ -857,7 +857,7 @@ body{
 }
 @media screen and (max-width: 576px) {
     .header-section{
-        background-image: url(../image/576px/HeaderBackground-min.jpg);
+        background-image: url(../image/576px/HeaderBackground-min-min.webp);
         background-repeat: no-repeat;
         background-position-x: center;
         background-origin: border-box;
@@ -890,7 +890,7 @@ body{
         display: none;
     }
     .choose{
-        background-image: url('../image/576px/WhyBackground\ \(1\)-min.jpg');
+        background-image: url('../image/576px/WhyBackground\ \(1\)-min-min.webp');
         background-repeat: no-repeat;
         background-position-x: center;
         background-origin: border-box;
@@ -924,7 +924,7 @@ body{
         width: 100%;
     }
     .madrid{
-        background-image: url('../image/576px/render-1477041_1280\ 1\ \(1\)-min.jpg');
+        background-image: url('../image/576px/render-1477041_1280\ 1\ \(1\)-min-min.webp');
         background-repeat: no-repeat;
         background-position-x: center;
         background-origin: border-box;
@@ -936,7 +936,7 @@ body{
         width: 100%;
     }
     .spain{
-        background-image: url('../image/576px/spain-1859434_1280\ 1-min.jpg');
+        background-image: url('../image/576px/spain-1859434_1280\ 1-min-min.webp');
         background-repeat: no-repeat;    
         background-position-x: center;
         background-origin: border-box;
@@ -961,7 +961,7 @@ body{
         margin-top: auto;
     }
     .review{
-        background-image: url('../image/576px/BG-min.jpg');
+        background-image: url('../image/576px/BG-min-min.webp');
         background-repeat: no-repeat;
         background-position-x: center;
         background-origin: border-box;
