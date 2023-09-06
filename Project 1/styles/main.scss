@@ -1,6 +1,8 @@
 body{
     // font-family: 'Aleo', serif;
     font-family: 'Josefin Sans', sans-serif;
+   
+    
 
 }
 *{
@@ -15,9 +17,11 @@ body{
 .mobile{
     display: none;
     padding-top: 25px;
+
 }
 .active{
     transform: none;
+    overflow: hidden;
 }
 .burger{
     display: none;

@@ -19,6 +19,7 @@ body {
 
 .active {
   transform: none;
+  overflow: hidden;
 }
 
 .burger {
