@@ -131,6 +131,13 @@ body {
 .header {
   background: #5373FD;
 }
+.header-scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,11 +162,15 @@ body {
   letter-spacing: 2.4px;
   text-transform: uppercase;
 }
+.header .container .main-nav {
+  padding: 32px 0;
+}
 .header .container .main-nav .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 .header .container .main-nav .nav-list .nav-item .nav-link {
   color: #FFF;
@@ -168,6 +179,7 @@ body {
   line-height: 20px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  padding: 32px 0;
 }
 .header .container .main-nav .nav-list .nav-item:hover,
 .header .container .main-nav .nav-list .nav-item:focus {
@@ -689,7 +701,12 @@ body {
     top: 45px;
   }
 
-  .nav-link {
+  .header .container .main-nav {
+    padding: initial;
+  }
+
+  .header .container .main-nav .nav-list .nav-item .nav-link {
+    padding: initial;
     display: block;
     border: #fff 1px solid;
     border-radius: 5px;
@@ -697,7 +714,7 @@ body {
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #000;
+    color: #fff;
   }
 
   .nav-link:hover {
@@ -843,6 +860,7 @@ body {
     -moz-background-origin: border-box;
     -webkit-background-origin: border-box;
     background-size: cover;
+    height: 100vh;
   }
 
   .header-section .container .main-header {
@@ -873,7 +891,7 @@ body {
   }
 
   .choose {
-    background-image: url("../image/576px/WhyBackground (1)-min-min.webp");
+    background-image: url("../image/576px/WhyBackground-_1_-min-min.webp");
     background-repeat: no-repeat;
     background-position-x: center;
     background-origin: border-box;
@@ -912,7 +930,7 @@ body {
   }
 
   .madrid {
-    background-image: url("../image/576px/render-1477041_1280 1 (1)-min-min.webp");
+    background-image: url("../image/576px/render-1477041_1280-1-_1_-min-min.webp");
     background-repeat: no-repeat;
     background-position-x: center;
     background-origin: border-box;
@@ -926,7 +944,7 @@ body {
   }
 
   .spain {
-    background-image: url("../image/576px/spain-1859434_1280 1-min-min.webp");
+    background-image: url("../image/576px/spain-1859434_1280-1-min-min.webp");
     background-repeat: no-repeat;
     background-position-x: center;
     background-origin: border-box;

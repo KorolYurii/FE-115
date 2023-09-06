@@ -16,7 +16,7 @@
     <div class="page-wrapper">
         
         <section class="header-section">
-            <header class="header">
+            <header class="header" id="header">
                 <div class="container">
                     <div class="logo">
                         <a class="logo-link" href="#">Bhromaon</a>
@@ -36,6 +36,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
+                            
                         </ul>
                         
                     </nav>
@@ -66,7 +67,7 @@
                     </form>                     
                 </div>
                 <div class="scroll-link-wrapper">
-                    <a class="scroll-link" href="#footer">
+                    <a class="scroll-link" href="#choose">
                         <p class="scroll-text">Scroll Down</p>
                         <svg width="16" height="16" viewBox="0 0 56 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="chevron-down">
@@ -79,7 +80,7 @@
         </section>
         
         <main>
-            <section class="choose">
+            <section class="choose" id="choose">
                 <div class="container">
                     <div class="info">
                         <h2 class="choose-header">Why Choose Us</h2>
@@ -250,6 +251,22 @@
 
         }
     </script>
+    <script>
+                // Сразу создаём переменные
+        
+
+        /**
+         * Слушаем событие прокрутки
+         */
+        window.addEventListener('scroll', e => {
+            let header = document.getElementById('header').classList
+            let active_class = "header-scrolled"
+
+          if(pageYOffset > 820) header.add(active_class)
+          else header.remove(active_class)
+        })
+    </script>
+    
     
 </body>
 </html>

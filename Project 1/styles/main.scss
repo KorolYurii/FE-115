@@ -120,8 +120,10 @@ body{
             margin: 0 auto;
             height: 50px;
             padding-bottom: 120px;
+            
             .scroll-link{
                 text-align: center;
+                
                 
                 .scroll-text{
                     color:  #fff;                   
@@ -140,6 +142,15 @@ body{
 
 .header{
     background: #5373FD;
+    
+
+    &-scrolled{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        transition: all 0.3s ease;
+    }
     
     
     .container{        
@@ -167,12 +178,15 @@ body{
             }
         }
         .main-nav{
+            padding: 32px 0;
             .nav-list{
                 display: -webkit-box;        
                 display: -ms-flexbox;        
                 display: flex;
                 gap: 40px;
+                flex-wrap: wrap;
                 .nav-item{
+                    
                     .nav-link{
                         color: #FFF;                       
                         font-family: 'Aleo', serif;
@@ -180,6 +194,7 @@ body{
                         line-height: 20px; 
                         letter-spacing: 1.4px;
                         text-transform: uppercase;
+                        padding: 32px 0;
                     }
                     
                 }
@@ -723,9 +738,12 @@ body{
         transform: rotate(-45deg);
         top: 45px;
     }
+    .header .container .main-nav {
+        padding: initial;
+    }
     
-    
-    .nav-link{
+    .header .container .main-nav .nav-list .nav-item .nav-link{
+        padding: initial;
         display: block;        
         border: #fff 1px solid;
         border-radius: 5px;        
@@ -733,12 +751,13 @@ body{
         margin: 0 auto;
         padding-top: 10px ;
         padding-bottom: 10px;
-        color: #000;
+        color: #fff;
     }
     .nav-link:hover{
         background-color: blue;
         
     }
+    
     .header .container .main-nav .nav-list .nav-item:hover{
         transform: initial;
         transition: initial;
@@ -864,6 +883,7 @@ body{
         -moz-background-origin: border-box;
         -webkit-background-origin: border-box;
         background-size: cover;
+        height: 100vh;
     }
     .header-section .container .main-header{
         font-size: 32px;
@@ -890,7 +910,7 @@ body{
         display: none;
     }
     .choose{
-        background-image: url('../image/576px/WhyBackground\ \(1\)-min-min.webp');
+        background-image: url('../image/576px/WhyBackground-_1_-min-min.webp');
         background-repeat: no-repeat;
         background-position-x: center;
         background-origin: border-box;
@@ -924,7 +944,7 @@ body{
         width: 100%;
     }
     .madrid{
-        background-image: url('../image/576px/render-1477041_1280\ 1\ \(1\)-min-min.webp');
+        background-image: url('../image/576px/render-1477041_1280-1-_1_-min-min.webp');
         background-repeat: no-repeat;
         background-position-x: center;
         background-origin: border-box;
@@ -936,7 +956,7 @@ body{
         width: 100%;
     }
     .spain{
-        background-image: url('../image/576px/spain-1859434_1280\ 1-min-min.webp');
+        background-image: url('../image/576px/spain-1859434_1280-1-min-min.webp');
         background-repeat: no-repeat;    
         background-position-x: center;
         background-origin: border-box;
