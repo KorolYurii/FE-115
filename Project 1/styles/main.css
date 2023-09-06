@@ -292,9 +292,9 @@ body {
 }
 .actions-section .container .actions .line {
   position: absolute;
-  left: 17%;
-  top: 22%;
-  width: 65%;
+  left: 15%;
+  top: 18%;
+  width: 69%;
 }
 .actions-section .container .actions .actions-content {
   position: static;
@@ -308,7 +308,6 @@ body {
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
-  padding-top: 16px;
 }
 .actions-section .container .actions .actions-content .actions-text {
   color: #FFF;
