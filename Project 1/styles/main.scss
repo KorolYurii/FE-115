@@ -149,7 +149,7 @@ body{
         top: 0;
         width: 100%;
         z-index: 10;
-        transition: all 0.3s ease;
+        
     }
     
     
@@ -216,6 +216,9 @@ body{
     -moz-background-origin: border-box;
     -webkit-background-origin: border-box;
     background-size: cover;
+    &-scrolled{
+        margin-top: 90px;
+    }
     .container{
         display: -webkit-box;        
         display: -ms-flexbox;        

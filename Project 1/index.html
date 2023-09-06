@@ -257,11 +257,15 @@
 
         
         window.addEventListener('scroll', e => {
-            let header = document.getElementById('header').classList
+            let header = document.getElementById('header').classList            
             let active_class = "header-scrolled"
+            let choose = document.getElementById('choose').classList
+            let active_class_choose = "choose-scrolled"
 
           if(pageYOffset > 822) header.add(active_class)
           else header.remove(active_class)
+          if(pageYOffset > 822) choose.add(active_class_choose)
+          else choose.remove(active_class_choose)
         })
     </script>
     
