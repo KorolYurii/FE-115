@@ -325,7 +325,7 @@ body{
             .line{
                 position: absolute;
                 left: 15%;
-                top: 18%;
+                top: 23%;
                 width: 69%;
             }
             .actions-content{
@@ -770,6 +770,11 @@ body{
         background-color: yellow;
         color: blue;
     }
+    
+    .choose-scrolled{
+        margin-top: 0;
+    }
+    
     .choose .container .info .choose-button:hover,
     .choose .container .info .choose-button:focus{
         -webkit-transition: none; 
