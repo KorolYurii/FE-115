@@ -734,6 +734,16 @@ body {
     color: blue;
   }
 
+  .choose {
+    background-image: url("../image/968/choose-min.webp");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-size: cover;
+  }
+
   .choose-scrolled {
     margin-top: 0;
   }
@@ -746,6 +756,26 @@ body {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+  }
+
+  .madrid {
+    background-image: url("../image/968/madrid-min.webp");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-size: cover;
+  }
+
+  .spain {
+    background-image: url("../image/968/spain-min.webp");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-size: cover;
   }
 
   .madrid .container .madrid-content .madrid-button:hover,
@@ -777,6 +807,7 @@ body {
   }
 
   .choose .container .info .choose-header {
+    margin-top: 15px;
     padding-top: 0;
     font-size: 30px;
   }
@@ -840,6 +871,16 @@ body {
 
   .choose .container .info .choose-header-text {
     max-width: initial;
+  }
+
+  .review {
+    background-image: url("../image/968/review-min.webp");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-origin: border-box;
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-size: cover;
   }
 
   .review .container .review-content {
