@@ -14,10 +14,17 @@ function userFullName(){
     // let -1=name = 'Denis';
     
     
-    const userName = prompt('add your full name');
+    const userName = prompt('add your name');
+    const userLastName = prompt('add your last name');
     
     if (userName && userName.length && userName.length > 1) {
-        console.log(`Hello ${userName}`); 
+         
+        if (userLastName && userLastName.length && userLastName.length > 3) {
+            console.log(`Hello ${userName} ${userLastName}`);
+        }
+        else{
+            console.log(`last name is too short`);
+        }
     }
     else {
         console.log(`name is too short`);
@@ -25,24 +32,26 @@ function userFullName(){
 }
 
 //3 
-// slash*  
-/*const userName = prompt('add your full name');
+// slash* 
 
+/*const userName = prompt('add your full name');
 if (userName && userName.length && userName.length > 1) {
     console.log(`Hello ${userName}`); 
 }
 else {
     console.log(`name is too short`);
 }*/
-//ctrl+slash
-// const userName = prompt('add your full name');
 
+// ctrl+slash   
+
+// const userName = prompt('add your full name');
 // if (userName && userName.length && userName.length > 1) {
 //     console.log(`Hello ${userName}`); 
 // }
 // else {
 //     console.log(`name is too short`);
 // }
+
 //2*slash
 
 //4

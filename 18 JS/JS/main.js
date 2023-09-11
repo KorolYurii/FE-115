@@ -42,10 +42,11 @@ function chocolate(){
 }
 function numeric(){
     const number = prompt('enter a three-digit number');
-    const a = parseInt(number/100);
-    const b = parseInt(number%100/10);
-    const c = parseInt(number%10);
-    console.log( c + b + a );
+    const a = parseInt(number/100).toString();
+    const b = parseInt(number%100/10).toString();
+    const c = parseInt(number%10).toString();
+    console.log(parseInt( c + b + a ));
+    
     
 }
 //3

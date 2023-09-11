@@ -46,10 +46,10 @@ function chocolate() {
 
 function numeric() {
   var number = prompt('enter a three-digit number');
-  var a = parseInt(number / 100);
-  var b = parseInt(number % 100 / 10);
-  var c = parseInt(number % 10);
-  console.log(c + b + a);
+  var a = parseInt(number / 100).toString();
+  var b = parseInt(number % 100 / 10).toString();
+  var c = parseInt(number % 10).toString();
+  console.log(parseInt(c + b + a));
 } //3
 
 

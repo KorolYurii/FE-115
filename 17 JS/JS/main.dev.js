@@ -11,25 +11,29 @@ function userFullName() {
   // let while = 'Denis';
   // let -1=name = 'Denis';
 
-  var userName = prompt('add your full name');
+  var userName = prompt('add your name');
+  var userLastName = prompt('add your last name');
 
   if (userName && userName.length && userName.length > 1) {
-    console.log("Hello ".concat(userName));
+    if (userLastName && userLastName.length && userLastName.length > 3) {
+      console.log("Hello ".concat(userName, " ").concat(userLastName));
+    } else {
+      console.log("last name is too short");
+    }
   } else {
     console.log("name is too short");
   }
 } //3 
-// slash*  
+// slash* 
 
 /*const userName = prompt('add your full name');
-
 if (userName && userName.length && userName.length > 1) {
     console.log(`Hello ${userName}`); 
 }
 else {
     console.log(`name is too short`);
 }*/
-//ctrl+slash
+// ctrl+slash   
 // const userName = prompt('add your full name');
 // if (userName && userName.length && userName.length > 1) {
 //     console.log(`Hello ${userName}`); 

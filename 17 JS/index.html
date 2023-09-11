@@ -18,18 +18,18 @@
     <button type="button" onclick="speed()">speed</button>
     <button type="button" onclick="converter()">converter</button>
     <script src="./JS/main.js">
-        console.log(3, typeof 3);
-        console.log(3.3, typeof 3.3);
-        console.log('3', typeof '3');
-        console.log(true, typeof true);
-        console.log(undefined,typeof undefined);
-        console.log(null, typeof null);
+        console.log(3, typeof 3); // number
+        console.log(3.3, typeof 3.3);// number
+        console.log('3', typeof '3');// string
+        console.log(true, typeof true);// boolean
+        console.log(undefined,typeof undefined);// undefined
+        console.log(null, typeof null);// object
             
-        console.log(BigInt(Number.MAX_SAFE_INTEGER), typeof BigInt(Number.MAX_SAFE_INTEGER));
-        console.log(Symbol('Oleg'), typeof Symbol('Oleg'));
-        console.log({}, typeof {});
-        console.log([], typeof []);
-        console.log('function', typeof (() => { return 1}));
+        console.log(BigInt(Number.MAX_SAFE_INTEGER), typeof BigInt(Number.MAX_SAFE_INTEGER));// bigint
+        console.log(Symbol('Oleg'), typeof Symbol('Oleg'));// symbol
+        console.log({}, typeof {});// object
+        console.log([], typeof []);// object
+        console.log('function', typeof (() => { return 1}));// function
     </script>
     
    
