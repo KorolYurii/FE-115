@@ -52,7 +52,7 @@ console.log(`${result}`);
 
 //5
 function threeNumers(a, b, c) {
-  function combineDigits(num1, num2, num3) {
+  function combineNum(num1, num2, num3) {
     if (num1 >= 0 && num1 <= 9 && 
       num2 >= 0 && num2 <= 9 &&
       num3 >= 0 && num3 <= 9) {
@@ -61,7 +61,7 @@ function threeNumers(a, b, c) {
         return "error, enter 0 - 9";
     }
 }
-const result = combineDigits(2, 3, 4);
+const result = combineNum(2, 3, 4);
 console.log(`${result}`);
    
 }

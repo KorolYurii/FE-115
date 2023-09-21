@@ -47,7 +47,7 @@ var result = factorial(number);
 console.log("".concat(result)); //5
 
 function threeNumers(a, b, c) {
-  function combineDigits(num1, num2, num3) {
+  function combineNum(num1, num2, num3) {
     if (num1 >= 0 && num1 <= 9 && num2 >= 0 && num2 <= 9 && num3 >= 0 && num3 <= 9) {
       return num1 * 100 + num2 * 10 + num3;
     } else {
@@ -55,7 +55,7 @@ function threeNumers(a, b, c) {
     }
   }
 
-  var result = combineDigits(2, 3, 4);
+  var result = combineNum(2, 3, 4);
   console.log("".concat(result));
 } //6
 
