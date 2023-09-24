@@ -85,7 +85,7 @@ function week() {
         if (userInput.toLowerCase() === currentDay.toLowerCase()) {
             alert("Наступний день тижня: " + getNextDay());
         } else {
-            alert("Введіть правильний день тижня " + currentDay);
+            alert("Введіть наступний день тижня " + currentDay);
         }
     }
 
@@ -105,14 +105,7 @@ function getNextDay() {
         // }
         // const index = daysOfWeek.indexOf(day);
 
-        //     if (index !== -1) {
-        //         // Если введенный день найден, выводим следующий день
-        //         const nextIndex = (index + 1) % daysOfWeek.length;
-        //         prompt(`Следующий день недели ${+ daysOfWeek[nextIndex]} `);;
-        //     } else {
-        //         prompt(`Неверный день недели: ${+ currentDay}`);
-                
-        //     }
+        //     
         // while (confirm(`${days[currDay]}. Do you want to see the next day?`)) {
         //     currDay = (currDay + 1) % days.length;
         // }
