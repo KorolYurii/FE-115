@@ -81,7 +81,6 @@ function week() {
             
             break;
         }
-
         if (userInput.toLowerCase() === currentDay.toLowerCase()) {
             alert("Наступний день тижня: " + getNextDay());
         } else {
