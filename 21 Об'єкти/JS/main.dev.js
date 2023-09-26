@@ -5,7 +5,7 @@ var car = {
   brand: 'AUDI',
   year: 2018,
   averSreed: 250,
-  drivers: ['Brian'],
+  drivers: ['Victor'],
   fuel: 8,
   distance: 400,
   showInfo: function showInfo() {
@@ -35,19 +35,17 @@ var car = {
     }
   }
 };
-car.addDriver('Dominic');
-console.log(car.checkDriver('Brian'));
+car.addDriver('Dima');
+console.log(car.checkDriver('Victor'));
 car.showInfo();
 car.distance = 2000;
 car.consumption();
 car.calcTime(); //normal
-// Объект, представляющий время
 
 var Time = {
   hours: 0,
   minutes: 0,
   seconds: 0,
-  // Функция для вывода времени на экран
   displayTime: function displayTime() {
     var hoursStr = String(this.hours).padStart(2, "0");
     var minutesStr = String(this.minutes).padStart(2, "0");
@@ -111,13 +109,10 @@ currentTime.displayTime(); // Выведет "00:15:15" (следующий де
 //   alert( date );
 // }
 //max
-// Объект, представляющий обычную дробь
 
 var Fraction = {
   numerator: 0,
-  // Числитель
   denominator: 1,
-  // Знаменатель
   // Метод для создания новой дроби
   create: function create(numerator, denominator) {
     var fraction = Object.create(this);

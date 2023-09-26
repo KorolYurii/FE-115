@@ -4,7 +4,7 @@ const car = {
   year: 2018,
   averSreed: 250,
   drivers: [
-    'Brian'
+    'Victor'
   ],
   fuel: 8,
   distance: 400,
@@ -42,21 +42,21 @@ const car = {
 
 
 }
-car.addDriver('Dominic')
-console.log(car.checkDriver('Brian'));
+car.addDriver('Dima')
+console.log(car.checkDriver('Victor'));
 car.showInfo()
 car.distance = 2000
 car.consumption()
 car.calcTime()
 
 //normal
-// Объект, представляющий время
+
 const Time = {
   hours: 0,
   minutes: 0,
   seconds: 0,
 
-  // Функция для вывода времени на экран
+  
   displayTime: function() {
       const hoursStr = String(this.hours).padStart(2, "0");
       const minutesStr = String(this.minutes).padStart(2, "0");
@@ -142,10 +142,10 @@ currentTime.displayTime(); // Выведет "00:15:15" (следующий де
 // }
 //max
 
-// Объект, представляющий обычную дробь
+
 const Fraction = {
-  numerator: 0,   // Числитель
-  denominator: 1, // Знаменатель
+  numerator: 0,   
+  denominator: 1, 
 
   // Метод для создания новой дроби
   create: function(numerator, denominator) {
