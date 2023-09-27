@@ -42,7 +42,7 @@ function factorial(n) {
   }
 }
 
-var number = 6;
+var number = prompt("enter factorial number");
 var result = factorial(number);
 console.log("".concat(result)); //5
 

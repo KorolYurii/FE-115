@@ -34,6 +34,7 @@ function numbers() {
 //4
 
 function factorial(n) {
+ 
   if (n === 0 || n === 1) {
       return 1; 
   } else {
@@ -44,7 +45,7 @@ function factorial(n) {
       return result;
   }
 }
-const number = 6; 
+const number = prompt( `enter factorial number`); 
 const result = factorial(number);
 console.log(`${result}`);
 
