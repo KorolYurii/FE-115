@@ -27,8 +27,8 @@ const car = {
     console.log(`всього потрібно ${fixFuel}л. пального`);
   },
 
-  calcTime() {
-    let hours = this.distance / this.averSreed
+  calcTime(distance) {
+    let hours = distance / this.averSreed
     if (hours >= 12) {
       console.log(`час за який ви подолаєте відстань буде: ${hours + 3} год.`);      
     }else if (hours >= 8) {
@@ -47,9 +47,9 @@ const car = {
 car.addDriver('Dima')
 console.log(car.checkDriver('Victor'));
 car.showInfo()
-car.distance = 3000
+car.distance = 2000
 car.consumption()
-car.calcTime()
+car.calcTime(2000)
 
 //normal
 const time = {

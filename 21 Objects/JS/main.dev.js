@@ -25,8 +25,8 @@ var car = {
     var fixFuel = this.distance / 100 * this.fuel;
     console.log("\u0432\u0441\u044C\u043E\u0433\u043E \u043F\u043E\u0442\u0440\u0456\u0431\u043D\u043E ".concat(fixFuel, "\u043B. \u043F\u0430\u043B\u044C\u043D\u043E\u0433\u043E"));
   },
-  calcTime: function calcTime() {
-    var hours = this.distance / this.averSreed;
+  calcTime: function calcTime(distance) {
+    var hours = distance / this.averSreed;
 
     if (hours >= 12) {
       console.log("\u0447\u0430\u0441 \u0437\u0430 \u044F\u043A\u0438\u0439 \u0432\u0438 \u043F\u043E\u0434\u043E\u043B\u0430\u0454\u0442\u0435 \u0432\u0456\u0434\u0441\u0442\u0430\u043D\u044C \u0431\u0443\u0434\u0435: ".concat(hours + 3, " \u0433\u043E\u0434."));
@@ -40,9 +40,9 @@ var car = {
 car.addDriver('Dima');
 console.log(car.checkDriver('Victor'));
 car.showInfo();
-car.distance = 3000;
+car.distance = 2000;
 car.consumption();
-car.calcTime(); //normal
+car.calcTime(2000); //normal
 
 var time = {
   hours: 0,

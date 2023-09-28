@@ -52,20 +52,17 @@ console.log(`${result}`);
 
 
 //5
-function threeNumers(a, b, c) {
-  function combineNum(num1, num2, num3) {
-    if (num1 >= 0 && num1 <= 9 && 
-      num2 >= 0 && num2 <= 9 &&
-      num3 >= 0 && num3 <= 9) {
-        return num1 * 100 + num2 * 10 + num3;
-    } else {
-        return "error, enter 0 - 9";
-    }
+function combineNum(num1, num2, num3) {
+  if (num1 >= 0 && num1 <= 9 && 
+    num2 >= 0 && num2 <= 9 &&
+    num3 >= 0 && num3 <= 9) {
+      return num1 * 100 + num2 * 10 + num3;
+  } else {
+      return "error, enter 0 - 9";
+  }
 }
-const result = combineNum(2, 3, 4);
+const resultNumber = combineNum(2, 3, 4);
 console.log(`${result}`);
-   
-}
 
 //6
 function square(a, b = a) {

@@ -46,19 +46,16 @@ var number = prompt("enter factorial number");
 var result = factorial(number);
 console.log("".concat(result)); //5
 
-function threeNumers(a, b, c) {
-  function combineNum(num1, num2, num3) {
-    if (num1 >= 0 && num1 <= 9 && num2 >= 0 && num2 <= 9 && num3 >= 0 && num3 <= 9) {
-      return num1 * 100 + num2 * 10 + num3;
-    } else {
-      return "error, enter 0 - 9";
-    }
+function combineNum(num1, num2, num3) {
+  if (num1 >= 0 && num1 <= 9 && num2 >= 0 && num2 <= 9 && num3 >= 0 && num3 <= 9) {
+    return num1 * 100 + num2 * 10 + num3;
+  } else {
+    return "error, enter 0 - 9";
   }
+}
 
-  var result = combineNum(2, 3, 4);
-  console.log("".concat(result));
-} //6
-
+var resultNumber = combineNum(2, 3, 4);
+console.log("".concat(result)); //6
 
 function square(a) {
   var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : a;
