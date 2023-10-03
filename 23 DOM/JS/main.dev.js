@@ -25,3 +25,32 @@ var playList = [{
   author: "METALLICA",
   song: "ENTER SANDMAN"
 }];
+
+function createPlayList() {
+  var songForLife = document.querySelector('div');
+  var htmlToInsert = '<ol>';
+
+  for (var i = 0; i < playList.length; i++) {
+    htmlToInsert += "<li class=\"play_list_item\"><div>Music name: ".concat(playList[i].song, "</div><br><div>Author: ").concat(playList[i].author, "</div><br><br></li>");
+  }
+
+  htmlToInsert += '</ol>';
+  songForLife.innerHTML = htmlToInsert;
+}
+
+function toggleMenu() {
+  document.querySelector('.modal_full').classList.toggle('open');
+  document.querySelector('.modal_win').classList.toggle('open-win');
+}
+
+var lights = document.querySelectorAll('.light');
+var currLight = 2;
+
+function color() {
+  for (var i = 0; i < lights.length; i++) {
+    lights[i].classList.remove('active');
+  }
+
+  currLight = (currLight + 1) % lights.length;
+  lights[currLight].classList.add('active');
+}

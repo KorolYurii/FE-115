@@ -9,24 +9,30 @@ button{
     cursor: pointer;
     display: block;
     margin-bottom: 50px;
+    text-transform: uppercase;
+    
 }
-.music{
-    background-color:crimson ;
-    color:chartreuse ;
-    padding: 20px;
-    border-radius: 10px;
-    border: solid 2px #000;
-    /* max-width: 500px; */
-    font-weight: bold;
-
+.transform{
+    transform: translateY(10px);
+    margin: 0 auto;
 }
 
-div{
-    display: inline-block;    
-}
 .container{
     width: 90%;
     max-width: 1440px;
+    
+}
+.modal_full{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    
+    top: 0;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
 }
 .modal_win{
     display: block;
@@ -37,19 +43,35 @@ div{
     padding-left: 20px;
     padding-right: 20px;
     border: #000 2px solid;
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 20px;
 }
 .header{
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 .header_text{  
     display: block;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px pink;
+    margin-bottom: 15px;
 }
-.closed{
-    display: none;
+.text{
+    margin-bottom: 20px;
+}
+.open{
+    /* display: none; */
     transition: all 0.5s ease;
-    
+    opacity: 0.5;
+    visibility: initial;
+}
+.open-win{
+    transition: all 0.5s ease;
+    opacity: initial;
+    visibility: initial;
 }
