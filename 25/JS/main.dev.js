@@ -3,13 +3,13 @@
 $(function () {
   $('.slider').slick({
     dots: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000
   });
   $('.arrivals_slider').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     prevArrow: $('.arrivals_arrow__left'),
     nextArrow: $('.arrivals_arrow__right'),
