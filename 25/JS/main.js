@@ -77,5 +77,12 @@ $(function () {
     })
 })
 
-
+function toggleMenu(e){
+    e.preventDefault();
+    e.target.classList.toggle('active');
+    document.querySelector('.main_nav').classList.toggle('active');
+    document.querySelector('.burger').classList.toggle('active');            
+    document.querySelector('.page_wrapper').classList.toggle('menu_open');
+    
+}
   

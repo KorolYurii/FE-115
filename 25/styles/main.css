@@ -2,8 +2,17 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -461,11 +470,6 @@ body {
     transition: all ease 0.3s;
   }
 
-  .main-nav.active {
-    transform: none;
-    transition: all 0.5s ease;
-  }
-
   .main_nav_list {
     display: flex;
     flex-direction: column;
@@ -563,6 +567,6 @@ body {
   .footer_logo {
     position: absolute;
     top: -110px;
-    left: 50%;
+    left: 63%;
   }
 }

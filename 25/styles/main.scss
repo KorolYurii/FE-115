@@ -2,8 +2,16 @@
     box-sizing: border-box;
 
 }
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -341,7 +349,7 @@ body{
     --p1: #F16A50;
 }
 .active{
-    transform: none;
+    transform: none
 }
 
 @media screen and (max-width: 968px) {
@@ -408,6 +416,7 @@ body{
 }
 
 @media screen and (max-width: 680px){
+    
     .arrivals_arrow__left,
     .arrivals_arrow__right,
     .partners_arrow__left,
@@ -442,13 +451,13 @@ body{
         transform: translateX(100%);
         transition: all ease .3s;
     }
-    .main-nav.active{
-        transform: none;
-        transition: all .5s ease;
+    // .main-nav.active{
+    //     transform: translateX(1px);
+    //     transition: all .5s ease;
         
         
        
-    }
+    // }
     
     .main_nav_list{
         display: flex;
@@ -537,7 +546,7 @@ body{
     .footer_logo{
         position: absolute;
         top: -110px;
-        left: 50%;
+        left: 63%;
     }
     .slider_image{
         //padding: 0 300px 0 50px;
