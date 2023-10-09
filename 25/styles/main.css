@@ -425,6 +425,14 @@ body {
   }
 }
 @media screen and (max-width: 680px) {
+  .arrivals_arrow__left,
+.arrivals_arrow__right,
+.partners_arrow__left,
+.partners_arrow__right {
+    display: none;
+    visibility: hidden;
+  }
+
   .mobile {
     display: block;
   }
@@ -534,13 +542,6 @@ body {
 
   .slider_btn {
     right: 39px;
-  }
-
-  .arrivals_arrow__left,
-.arrivals_arrow__right,
-.partners_arrow__left,
-.partners_arrow__right {
-    display: none;
   }
 
   .arrivals_slider {
