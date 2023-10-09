@@ -3,13 +3,13 @@
 $(function () {
   $('.slider').slick({
     dots: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000
   });
   $('.arrivals_slider').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     prevArrow: $('.arrivals_arrow__left'),
     nextArrow: $('.arrivals_arrow__right'),
@@ -74,4 +74,5 @@ function toggleMenu(e) {
   document.querySelector('.main_nav').classList.toggle('active');
   document.querySelector('.burger').classList.toggle('active');
   document.querySelector('.page_wrapper').classList.toggle('menu_open');
+  document.querySelector('.logo').classList.toggle('menu_open');
 }
