@@ -1,7 +1,7 @@
 $(function () {
     $('.slider').slick({
         dots: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
     });
     $('.arrivals_slider').slick({
@@ -17,7 +17,7 @@ $(function () {
                 settings:{
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    autoplay: false,
+                    autoplay: true,
                 }            
             },
             {
@@ -53,7 +53,7 @@ $(function () {
             settings:{
                 slidesToShow: 6,
                 slidesToScroll: 1,
-                autoplay: false,
+                autoplay: true,
             }
         },
         {
