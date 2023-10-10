@@ -343,6 +343,7 @@ body{
     margin-top: 55px;
     text-align: center;
 }
+
 .partners_arrow__right,
 .partners_arrow__left,
 .arrivals_arrow__right,
@@ -351,8 +352,7 @@ body{
     --p1: #F16A50;
 }
 .active{
-    transform: none;
-    
+    transform: none;    
 }
 
 
@@ -441,14 +441,15 @@ body{
         left: -200px;
     }
     
-    
     .arrivals_arrow__left,
     .arrivals_arrow__right,
     .partners_arrow__left,
     .partners_arrow__right{
         display: none;
-        visibility: hidden;
+        visibility: hidden;        
     }
+   
+
     .logo.menu_open{
         display: flex;
     }
@@ -508,7 +509,7 @@ body{
         justify-content: center;
     }
     .user_support{
-        margin-right: 55px;
+        margin-right: 10px;
     }
     .burger{
         position: relative;
