@@ -21,6 +21,10 @@ body {
   margin: 0 auto;
 }
 
+.ralative {
+  position: relative;
+}
+
 .header {
   background-color: #F8F1EA;
 }
