@@ -64,14 +64,6 @@ body{
     display: flex;
     gap: 30px;
 }
-.slider_image{
-    //max-height: 700px;
-    width: 100%;
-    position: relative;
-}
-.slider_item{
-    position: relative;
-}
 .slider_item::before{
     display: block;
     top: 0;
@@ -85,7 +77,7 @@ body{
 }
 .slider_item{
     width: 100%;
-   
+    position: relative;
 }
 .slider_image_wrapper{
     position: relative;        
@@ -96,6 +88,10 @@ body{
 }
 
 .slider_image{
+    //max-height: 700px;
+    width: 100%;
+    position: relative;
+
     width: 100%;
     position: absolute;
     top: 0;
@@ -364,12 +360,21 @@ body{
     margin-top: 55px;
     text-align: center;
 }
+.arrivals_arrow__left svg,
+.arrivals_arrow__right svg,
+.partners_arrow__left svg,
+.partners_arrow__right svg{
+    fill: #202020;
+} 
+.arrivals_arrow__right:hover svg,
+.arrivals_arrow__left:hover svg,
+.partners_arrow__right:hover svg,
+.partners_arrow__left:hover svg{
+    fill: red;
+} 
 
-.partners_arrow__right,
-.partners_arrow__left,
-.arrivals_arrow__right,
-.arrivals_arrow__left,
 .social_item:hover{
+    
     --p1: #F16A50;
 }
 .active{
