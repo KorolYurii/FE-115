@@ -64,7 +64,6 @@ body {
 }
 
 .slider_image {
-  max-height: 700px;
   width: 100%;
   position: relative;
 }
@@ -83,6 +82,28 @@ body {
   z-index: 2;
   content: "";
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.84), rgba(217, 217, 217, 0.16));
+}
+
+.slider_item {
+  width: 100%;
+}
+
+.slider_image_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider_image_wrapper.one_to_three {
+  padding-bottom: 40%;
+}
+
+.slider_image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .heading {

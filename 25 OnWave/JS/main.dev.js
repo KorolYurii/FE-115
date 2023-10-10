@@ -3,7 +3,7 @@
 $(function () {
   $('.slider').slick({
     dots: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000
   });
   $('.arrivals_slider').slick({
