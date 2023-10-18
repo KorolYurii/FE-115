@@ -1203,6 +1203,14 @@ body{
 }
 
 @media screen and (max-width: 576px) {
+    .slick-slide{
+        
+        background-image: url('../image/576px/header-min.webp');        
+        
+        &:nth-child(2n+1){
+            background-image: url('../image/576px/header-yellow-min.webp');
+        }
+    }
     .main_header{
     
         .slider{
@@ -1224,6 +1232,7 @@ body{
                         }
                         .motto{
                             font-size: 14px;
+                            width: 95%;
                         }
                     }
                     
@@ -1388,7 +1397,16 @@ body{
         transform: rotate(-45deg);
         top: 18px;
     }
-    
+    .news{
+        background-image: url('../image/576px/news-min.webp');
+    }
+    .initial{
+        background-image: none;
+        height: initial;
+        &:nth-child(2n+1){
+            background-image: initial;
+        }
+    }
     .about_us{
         padding-bottom: initial;
         .container{
@@ -1487,7 +1505,8 @@ body{
         
     }
     .footer{
-        
+        background-image: url('../image/576px/footer-min.webp');
+        padding-bottom: 100px;
         .footer_container{
             
             .form{
@@ -1527,11 +1546,17 @@ body{
                 }
             }
             .footer_wraper{
+                display: flex;
+                flex-direction: column;
+                
                 
                 .footer_logo{
+                    margin: 0 auto;
+                    
                 }
                 .footer_social_list{
-                    
+                    justify-content: center;
+                    mb10
                     .footer_social_item{
                         
                         .footer_arrow_link_wraper{
@@ -1546,7 +1571,7 @@ body{
                 }
             }
             .copyright{
-                
+                text-align: center;
             }
         }
 
