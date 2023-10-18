@@ -1,0 +1,22 @@
+body{
+    background-color: brown;
+}
+.container{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.list{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.link{
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: cadetblue;
+}
