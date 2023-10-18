@@ -120,12 +120,9 @@ window.addEventListener('scroll', e => {
 
 
 //validation
-    // const EMAIL_MIN_LENGHT = 5;
-    // // const mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{8,})");
+    const EMAIL_MIN_LENGHT = 5;
     
-    // // function testPasswordRegex(value) {
-    // //     return mediumRegex.test(value);
-    // // }
+   
     
     // function checkEmailLenght() {
     //     const valueLenght = window.inputEmail.value.length;
@@ -145,30 +142,26 @@ window.addEventListener('scroll', e => {
         
     // }
     
-    // function validateForm(event) {
-    //     event.preventDefault();
-    //     resetValidation();
+    function validateForm(event) {
+        event.preventDefault();
+        resetValidation();
         
-    //     const email = window.inputEmail.value;
-    //     const name = window.inputName.value;
+        const email = window.inputEmail.value;
+        const name = window.inputName.value;
     
-    //     if(!email) {
-    //         window.emailHelp.classList.remove('d-none');
-    //         return false;
-    //     }
-    //     if(!name) {
-    //         window.nameHelp.classList.remove('d-none');
-    //         return false;
-    //     }
-    
-    //     if(!testPasswordRegex(name)) {
-    //         window.nameHelp.classList.remove('d-none');
-    //         window.nameHelpDescription.classList.remove('d-none');
-    //     }
+        if(!email) {
+            window.emailHelp.classList.remove('d-none');
+            return false;
+        }
+        if(!name) {
+            window.nameHelp.classList.remove('d-none');
+            return false;
+        }
     
         
-    //     console.log(email, password);
-    // }
+        
+        console.log(email, password);
+    }
     
     
 
@@ -190,9 +183,8 @@ window.addEventListener('scroll', e => {
         let chatId = "-1001845558174";
     
         let text = `
-        <b>Email: </b> ${email}
-        <b>Name </b> ${name}
-        
+        Email: ${email}    
+        Name: ${name}
         `;
     
         let urlString = `https://api.telegram.org/bot${apiToken}/sendMessage?chat_id=${chatId}&text=${text}`;
@@ -223,10 +215,10 @@ window.addEventListener('scroll', e => {
         // request.open("GET", urlString);
         // request.send();
     
-        let response = request.response;
+        //let response = request.response;
         
 
-        // Do what you want with response
+        
     }
 
 

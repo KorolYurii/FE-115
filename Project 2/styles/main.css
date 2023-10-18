@@ -171,7 +171,6 @@ body {
   top: 50px;
 }
 .headers-scrolled {
-  display: none;
   background-color: #2C4058;
 }
 .headers .container {
@@ -246,7 +245,7 @@ body {
 .about_us {
   background: #FFF;
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 .about_us .container .line {
   display: block;
@@ -319,7 +318,6 @@ body {
   transition: all 0.3s ease;
 }
 .about_us .container .about_us_content .about_us_description .location {
-  margin-top: 77px;
   color: #000;
   font-family: Open Sans;
   font-size: 15px;
@@ -354,7 +352,7 @@ body {
   -webkit-background-origin: border-box;
   background-size: cover;
   padding-top: 120px;
-  padding-bottom: 170px;
+  padding-bottom: 120px;
 }
 .news .container {
   position: relative;
@@ -367,7 +365,6 @@ body {
   height: 1px;
   background: #ffff;
   margin-bottom: 30px;
-  margin-top: 150px;
 }
 .news .container .news_header {
   color: #FFF;

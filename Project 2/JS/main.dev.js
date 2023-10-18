@@ -96,12 +96,8 @@ window.addEventListener('scroll', function (e) {
   var active_class = "headers-scrolled";
   if (pageYOffset > 1) header.add(active_class);else header.remove(active_class);
 }); //validation
-// const EMAIL_MIN_LENGHT = 5;
-// // const mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{8,})");
-// // function testPasswordRegex(value) {
-// //     return mediumRegex.test(value);
-// // }
-// function checkEmailLenght() {
+
+var EMAIL_MIN_LENGHT = 5; // function checkEmailLenght() {
 //     const valueLenght = window.inputEmail.value.length;
 //     const diff = valueLenght < EMAIL_MIN_LENGHT ? EMAIL_MIN_LENGHT - valueLenght : 0;
 //     if(diff) {
@@ -115,28 +111,28 @@ window.addEventListener('scroll', function (e) {
 //     window.emailHelp.classList.add('d-none');
 //     window.nameHelp.classList.add('d-none');
 // }
-// function validateForm(event) {
-//     event.preventDefault();
-//     resetValidation();
-//     const email = window.inputEmail.value;
-//     const name = window.inputName.value;
-//     if(!email) {
-//         window.emailHelp.classList.remove('d-none');
-//         return false;
-//     }
-//     if(!name) {
-//         window.nameHelp.classList.remove('d-none');
-//         return false;
-//     }
-//     if(!testPasswordRegex(name)) {
-//         window.nameHelp.classList.remove('d-none');
-//         window.nameHelpDescription.classList.remove('d-none');
-//     }
-//     console.log(email, password);
-// }
+
+function validateForm(event) {
+  event.preventDefault();
+  resetValidation();
+  var email = window.inputEmail.value;
+  var name = window.inputName.value;
+
+  if (!email) {
+    window.emailHelp.classList.remove('d-none');
+    return false;
+  }
+
+  if (!name) {
+    window.nameHelp.classList.remove('d-none');
+    return false;
+  }
+
+  console.log(email, password);
+}
 
 function formSubmit(event) {
-  var email, name, apiToken, chatId, text, urlString, request, response;
+  var email, name, apiToken, chatId, text, urlString, request;
   return regeneratorRuntime.async(function formSubmit$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -155,7 +151,7 @@ function formSubmit(event) {
         case 5:
           apiToken = "6216822090:AAFNNl1KOsugV5ADdSeRsGRDuFMlekDM1Qw";
           chatId = "-1001845558174";
-          text = "\n        <b>Email: </b> ".concat(email, "\n        <b>Name </b> ").concat(name, "\n        \n        ");
+          text = "\n        Email: ".concat(email, "    \n        Name: ").concat(name, "\n        ");
           urlString = "https://api.telegram.org/bot".concat(apiToken, "/sendMessage?chat_id=").concat(chatId, "&text=").concat(text);
           request = new XMLHttpRequest();
           request.open("GET", urlString);
@@ -177,10 +173,9 @@ function formSubmit(event) {
           // let request = new XMLHttpRequest();
           // request.open("GET", urlString);
           // request.send();
+          //let response = request.response;
 
-          response = request.response; // Do what you want with response
-
-        case 13:
+        case 12:
         case "end":
           return _context.stop();
       }
