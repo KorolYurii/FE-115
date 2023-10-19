@@ -46,7 +46,7 @@
                 <li class="slider_item">
                     <div class="item_cont">
                         <div class="heading_wrapper"> 
-                            <h1 class="heading">beautiful and reliable</h1>                        
+                            <h1 class="heading">beautiful & reliable</h1>                        
                             <p class="motto">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
                         </div>
                         
@@ -425,13 +425,13 @@
 
                         </div>
                         <form  id="loginForm" class="inputs">
-                            
-                            <p id="nameHelp" class="valid_name error d-none">Enter valid name</p>
                             <input class="input" type="text" name="name" id="inputName"  placeholder="Name">
+                            <p id="nameLenghtHelp" class="valid_name d-none">Min length <span id="nameDiffCount">0</span> symbols</p>
                             
                             
-                            <p id="emailHelp" class="valid_email error d-none">Enter valid email</p>
-                            <input class="input" type="text" name="email" id="inputEmail" placeholder="Email">
+                            <input class="input" type="email" name="email" id="inputEmail" placeholder="Email">
+                            <p id="emailLenghtHelp" class="valid_email d-none">Min length <span id="emailDiffCount">0</span> symbols</p>
+                            
                             
                             <button class="form_btn" type="submit">SUBMIT</button>
                         </form>

@@ -120,49 +120,45 @@ window.addEventListener('scroll', e => {
 
 
 //validation
-    const EMAIL_MIN_LENGHT = 5;
+    const NAME_MIN_LENGHT = 2;
     
    
     
-    // function checkEmailLenght() {
-    //     const valueLenght = window.inputEmail.value.length;
-    //     const diff = valueLenght < EMAIL_MIN_LENGHT ? EMAIL_MIN_LENGHT - valueLenght : 0;
-    
-    //     if(diff) {
-    //         window.emailDiffCount.textContent = diff;
-    //         window.emailLenghtHelp.classList.remove('d-none');
-    //     } else {
-    //         window.emailLenghtHelp.classList.add('d-none');
-    //     }
-    // };
-    
-    // function resetValidation() {
-    //     window.emailHelp.classList.add('d-none');
-    //     window.nameHelp.classList.add('d-none');
-        
-    // }
-    
-    function validateForm(event) {
-        event.preventDefault();
-        resetValidation();
-        
-        const email = window.inputEmail.value;
-        const name = window.inputName.value;
-    
-        if(!email) {
-            window.emailHelp.classList.remove('d-none');
-            return false;
+    function checkNameLenght() {
+        const valueLenght = window.inputName.value.length;
+        const diff = valueLenght < NAME_MIN_LENGHT ? NAME_MIN_LENGHT - valueLenght : 0;
+        console.log(diff);
+        if(diff) {
+            window.nameDiffCount.textContent = diff;
+            window.nameLenghtHelp.classList.remove('d-none');
+        } else {
+            window.nameLenghtHelp.classList.add('d-none');
         }
-        if(!name) {
-            window.nameHelp.classList.remove('d-none');
-            return false;
+    };
+    window.inputName.addEventListener('input', checkNameLenght)
+
+    document.addEventListener('DOMContentLoaded', checkNameLenght)
+
+
+
+    const EMAIL_MIN_LENGHT = 5;
+    function checkEmailLenght() {
+        const valueLenght = window.inputEmail.value.length;
+        const diff = valueLenght < EMAIL_MIN_LENGHT ? EMAIL_MIN_LENGHT - valueLenght : 0;
+        console.log(diff);
+        if(diff) {
+            window.emailDiffCount.textContent = diff;
+            window.emailLenghtHelp.classList.remove('d-none');
+        } else {
+            window.emailLenghtHelp.classList.add('d-none');
         }
+    };
     
-        
-        
-        console.log(email, password);
-    }
+
+   
+    window.inputEmail.addEventListener('input', checkEmailLenght);
     
+    document.addEventListener('DOMContentLoaded', checkEmailLenght);
     
 
 
@@ -193,30 +189,7 @@ window.addEventListener('scroll', e => {
         request.open("GET", urlString);
         request.send();
     
-        // let response = request.response;
-    
-        // const response = await fetch(urlString, {
-        //     method: 'post',
-        //     headers: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify({
-        //         chat_id: chatId,
-        //         text,
-        //         parse_mode: 'HTML'
-        //     })
-        // });
-    
-        // const resp = await response.json();
-        // console.log(resp);
-    
-        // let request = new XMLHttpRequest();
-        // request.open("GET", urlString);
-        // request.send();
-    
-        //let response = request.response;
-        
+             
 
         
     }

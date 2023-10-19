@@ -96,6 +96,7 @@ body{
 }
 
 
+
 .main_header{
     
     .slider{
@@ -131,16 +132,16 @@ body{
                 // justify-content: space-around;
                 // height: 100%;
                 position: relative;
-                align-items: center;
-                /* text-align: center; */
-                display: flex;
-                /* flex-direction: column; */
+                align-items: center;                
+                display: flex;                
                 justify-content: center;
                 height: 100%;
 
                 
                 .heading_wrapper{
                     .heading{
+                        padding: 0 20px 0;
+                        text-align: center;
                         color: #FFF;                
                         font-size: 80px;                
                         font-weight: 700;                
@@ -778,6 +779,7 @@ body{
                         font-size: 12px;
                     }
                     .input{
+                        
                         color: #000;                        
                         font-size: 18px;                        
                         line-height: 27px;
@@ -787,12 +789,18 @@ body{
                         height: 27px; 
                         width: 100%;
                         max-width: 310px;
-                        margin-bottom: 33px; 
-                        padding-bottom: 11px;
+                        margin-bottom: 7px; 
+                        padding: 11px 0;
                         &:focus{
                             opacity: 1;
                         }
                                               
+                    }
+                    .valid_name{
+                        margin-bottom: 15px;
+                    }
+                    .valid_email{
+                        margin-bottom: 35px;
                     }
                     .form_btn{
                         margin: 0 0 0 auto;
@@ -860,7 +868,10 @@ body{
     visibility: hidden;
 }
 .d-none{
-    display: none;
+    visibility: hidden;
+}
+.error{
+    color: red;
 }
 
 
@@ -870,7 +881,7 @@ body{
         .slider{
             
             .slick-dots {
-               
+               right: -45%;
                 & li{
                     
                 }
@@ -1091,7 +1102,7 @@ body{
                         
                     }
                     .about_us_link{
-                        margin-bottom: initial;
+                        margin-bottom: 20px;
                         
                     }
                     .location{
