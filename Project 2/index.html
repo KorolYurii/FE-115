@@ -46,7 +46,7 @@
                 <li class="slider_item">
                     <div class="item_cont">
                         <div class="heading_wrapper"> 
-                            <h1 class="heading">beautiful and reliable</h1>                        
+                            <h1 class="heading">beautiful & reliable</h1>                        
                             <p class="motto">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
                         </div>
                         
@@ -124,22 +124,22 @@
                     <nav class="nav">
                         <ul class="nav_list">
                             <li class="nav_item">
-                                <a class="nav_link" href="#">
+                                <a class="nav_link" href="#about_us">
                                     <span class="link_marker this_page"></span>
                                     ABOUT US</a>
                             </li>
                             <li class="nav_item">
-                                <a class="nav_link" href="#">
+                                <a class="nav_link" href="#gallery">
                                     <span class="link_marker"></span>
                                     PROJECTS</a>
                             </li>
                             <li class="nav_item">
-                                <a class="nav_link" href="#">
+                                <a class="nav_link" href="#news">
                                     <span class="link_marker"></span>
                                     NEWS</a>
                             </li>
                             <li class="nav_item">
-                                <a class="nav_link" href="#">
+                                <a class="nav_link" href="#contacts">
                                     <span class="link_marker"></span>
                                     CONTACT
                                     
@@ -227,7 +227,7 @@
                     </div>
                 </div>                
             </section>
-            <section class="news">
+            <section class="news" id="news">
                 <div class="container">
                     <div class="news_line"></div>
                     <h2 class="news_header">LATEST NEWS</h2>
@@ -308,7 +308,7 @@
                 </div>
                 
             </section>
-            <section class="galery"> 
+            <section class="galery" id="gallery"> 
                 <div class="container">
                     <div class="galery_line"></div>
                     <h2 class="galery_header">GALLERY</h2>
@@ -387,14 +387,14 @@
             
 
         </main>
-        <footer class="footer">
+        <footer class="footer" >
             
             <div class="footer_container">
-                <div class="form">
+                <div class="form" id="contacts">
                     <div class="form_line"></div>
                     <h2 class="form_header">GET IN TOUCH</h2>
                     <div class="form_wrapper">
-                        <div class="contacts">
+                        <div class="contacts" >
                             <a href="#">
                                 <span class="icon">
                                     <i class="fa-solid fa-location-dot"></i>
@@ -425,13 +425,13 @@
 
                         </div>
                         <form  id="loginForm" class="inputs">
-                            
-                            <p id="nameHelp" class="valid_name error d-none">Enter valid name</p>
                             <input class="input" type="text" name="name" id="inputName"  placeholder="Name">
+                            <p id="nameLenghtHelp" class="valid_name d-none">Min length <span id="nameDiffCount">0</span> symbols</p>
                             
                             
-                            <p id="emailHelp" class="valid_email error d-none">Enter valid email</p>
-                            <input class="input" type="text" name="email" id="inputEmail" placeholder="Email">
+                            <input class="input" type="email" name="email" id="inputEmail" placeholder="Email">
+                            <p id="emailLenghtHelp" class="valid_email d-none">Min length <span id="emailDiffCount">0</span> symbols</p>
+                            
                             
                             <button class="form_btn" type="submit">SUBMIT</button>
                         </form>

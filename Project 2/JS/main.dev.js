@@ -22,7 +22,7 @@ $(function () {
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     prevArrow: $('.arrivals_arrow_left'),
     nextArrow: $('.arrivals_arrow_right'),
@@ -97,39 +97,42 @@ window.addEventListener('scroll', function (e) {
   if (pageYOffset > 100) header.add(active_class);else header.remove(active_class);
 }); //validation
 
-var EMAIL_MIN_LENGHT = 5; // function checkEmailLenght() {
-//     const valueLenght = window.inputEmail.value.length;
-//     const diff = valueLenght < EMAIL_MIN_LENGHT ? EMAIL_MIN_LENGHT - valueLenght : 0;
-//     if(diff) {
-//         window.emailDiffCount.textContent = diff;
-//         window.emailLenghtHelp.classList.remove('d-none');
-//     } else {
-//         window.emailLenghtHelp.classList.add('d-none');
-//     }
-// };
-// function resetValidation() {
-//     window.emailHelp.classList.add('d-none');
-//     window.nameHelp.classList.add('d-none');
-// }
+var NAME_MIN_LENGHT = 2;
 
-function validateForm(event) {
-  event.preventDefault();
-  resetValidation();
-  var email = window.inputEmail.value;
-  var name = window.inputName.value;
+function checkNameLenght() {
+  var valueLenght = window.inputName.value.length;
+  var diff = valueLenght < NAME_MIN_LENGHT ? NAME_MIN_LENGHT - valueLenght : 0;
+  console.log(diff);
 
-  if (!email) {
-    window.emailHelp.classList.remove('d-none');
-    return false;
+  if (diff) {
+    window.nameDiffCount.textContent = diff;
+    window.nameLenghtHelp.classList.remove('d-none');
+  } else {
+    window.nameLenghtHelp.classList.add('d-none');
   }
-
-  if (!name) {
-    window.nameHelp.classList.remove('d-none');
-    return false;
-  }
-
-  console.log(email, password);
 }
+
+;
+window.inputName.addEventListener('input', checkNameLenght);
+document.addEventListener('DOMContentLoaded', checkNameLenght);
+var EMAIL_MIN_LENGHT = 5;
+
+function checkEmailLenght() {
+  var valueLenght = window.inputEmail.value.length;
+  var diff = valueLenght < EMAIL_MIN_LENGHT ? EMAIL_MIN_LENGHT - valueLenght : 0;
+  console.log(diff);
+
+  if (diff) {
+    window.emailDiffCount.textContent = diff;
+    window.emailLenghtHelp.classList.remove('d-none');
+  } else {
+    window.emailLenghtHelp.classList.add('d-none');
+  }
+}
+
+;
+window.inputEmail.addEventListener('input', checkEmailLenght);
+document.addEventListener('DOMContentLoaded', checkEmailLenght);
 
 function formSubmit(event) {
   var email, name, apiToken, chatId, text, urlString, request;
@@ -155,25 +158,7 @@ function formSubmit(event) {
           urlString = "https://api.telegram.org/bot".concat(apiToken, "/sendMessage?chat_id=").concat(chatId, "&text=").concat(text);
           request = new XMLHttpRequest();
           request.open("GET", urlString);
-          request.send(); // let response = request.response;
-          // const response = await fetch(urlString, {
-          //     method: 'post',
-          //     headers: {
-          //         'Accept': 'application/json',
-          //         'Content-Type': 'application/json'
-          //     },
-          //     body: JSON.stringify({
-          //         chat_id: chatId,
-          //         text,
-          //         parse_mode: 'HTML'
-          //     })
-          // });
-          // const resp = await response.json();
-          // console.log(resp);
-          // let request = new XMLHttpRequest();
-          // request.open("GET", urlString);
-          // request.send();
-          //let response = request.response;
+          request.send();
 
         case 12:
         case "end":
