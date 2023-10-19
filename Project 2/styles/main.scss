@@ -810,7 +810,8 @@ body{
         position: relative;
         .form{
             position: absolute;
-            background-color: #fff;
+            
+            background-image: url('../image/Background-min.webp');
             padding-top: 60px;
             padding-bottom: 68px;
             padding-left: 60px;
@@ -1346,7 +1347,8 @@ body{
         .footer_container{
             
             .form{
-                
+                background-image: initial;
+                background-color: #fff;
                 .form_line{
                     
                 }

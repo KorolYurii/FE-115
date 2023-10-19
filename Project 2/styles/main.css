@@ -742,7 +742,7 @@ body {
 }
 .footer .footer_container .form {
   position: absolute;
-  background-color: #fff;
+  background-image: url("../image/Background-min.webp");
   padding-top: 60px;
   padding-bottom: 68px;
   padding-left: 60px;
@@ -1161,6 +1161,10 @@ body {
   .galery .container .galery_wrapper .large {
     max-width: 580px;
     width: 100%;
+  }
+  .footer .footer_container .form {
+    background-image: initial;
+    background-color: #fff;
   }
   .footer .footer_container .form .form_header {
     font-size: 36px;
