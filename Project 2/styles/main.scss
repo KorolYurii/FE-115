@@ -124,12 +124,21 @@ body{
             display: block;
             
             .item_cont{
+                // align-items: center;
+                // text-align: center;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-around;
+                // height: 100%;
+                position: relative;
                 align-items: center;
-                text-align: center;
+                /* text-align: center; */
                 display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                /* flex-direction: column; */
+                justify-content: center;
                 height: 100%;
+
+                
                 .heading_wrapper{
                     .heading{
                         color: #FFF;                
@@ -137,7 +146,7 @@ body{
                         font-weight: 700;                
                         letter-spacing: 8px;
                         text-transform: uppercase;
-                        margin-top: 330px;
+                        //margin-top: 330px;
                         margin-bottom: 20px;
                     }
                     .motto{
@@ -145,10 +154,15 @@ body{
                         font-size: 18px;            
                         letter-spacing: 5.4px;
                         // margin-bottom: 370px;
+                        text-align: center;
                     }
                 }
                 
                 .arrow_link_wraper{
+                    position: absolute;
+                    bottom: 50px;
+
+
                     display: flex;
                     justify-content: center;
                     // display: inline-block;
@@ -179,6 +193,7 @@ body{
                             display: block;
                             color: #FFF;                            
                             padding-top: 10px;
+                            text-align: center;
                             
                         }
                     }
@@ -773,6 +788,7 @@ body{
                         width: 100%;
                         max-width: 310px;
                         margin-bottom: 33px; 
+                        padding-bottom: 11px;
                         &:focus{
                             opacity: 1;
                         }
@@ -903,7 +919,7 @@ body{
         background-color: #4d4c4c;
         opacity: .5;
         position: absolute;
-        
+        z-index: 2;
         top: 0;
         right: 0;
         bottom: 0;
@@ -1445,10 +1461,11 @@ body{
                         
                     }
                     .about_us_link{
-                        margin-bottom: initial;
+                        margin-bottom: 20px;
                         
                     }
                     .location{
+                        margin-top: 20px;
                         margin-bottom: 80px;
                         .icon{
                             
@@ -1484,6 +1501,11 @@ body{
                         max-width: 285px;
                         width: 100%;
                     }
+                    & svg{
+                        top: 80px;
+                        left: 38%;
+                    }
+                    
                 }
                 a{
                     max-width: 285px;

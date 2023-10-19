@@ -110,7 +110,7 @@ window.addEventListener('scroll', e => {
     let header = document.getElementById('headers').classList            
     let active_class = "headers-scrolled"
     
-  if(pageYOffset > 1) header.add(active_class)
+  if(pageYOffset > 100) header.add(active_class)
   else header.remove(active_class)
    
 })
@@ -241,8 +241,8 @@ window.addEventListener('scroll', e => {
 
 
 function toggleMenu(e){
-    e.preventDefault();
-    e.target.classList.toggle('active');
+    // e.preventDefault();
+    // e.target.classList.toggle('active');
     document.querySelector('.headers').classList.toggle('active');
     document.querySelector('.burger').classList.toggle('active'); 
     document.querySelector('.page_wrapper').classList.toggle('menu_open');

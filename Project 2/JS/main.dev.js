@@ -94,7 +94,7 @@ L.marker([51.486603466706335, 31.30802117611757], {
 window.addEventListener('scroll', function (e) {
   var header = document.getElementById('headers').classList;
   var active_class = "headers-scrolled";
-  if (pageYOffset > 1) header.add(active_class);else header.remove(active_class);
+  if (pageYOffset > 100) header.add(active_class);else header.remove(active_class);
 }); //validation
 
 var EMAIL_MIN_LENGHT = 5; // function checkEmailLenght() {
@@ -186,8 +186,8 @@ function formSubmit(event) {
 window.loginForm.addEventListener('submit', formSubmit);
 
 function toggleMenu(e) {
-  e.preventDefault();
-  e.target.classList.toggle('active');
+  // e.preventDefault();
+  // e.target.classList.toggle('active');
   document.querySelector('.headers').classList.toggle('active');
   document.querySelector('.burger').classList.toggle('active');
   document.querySelector('.page_wrapper').classList.toggle('menu_open'); // document.querySelector('.burger').classList.toggle('mobile');
