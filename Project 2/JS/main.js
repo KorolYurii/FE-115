@@ -62,6 +62,7 @@ $(function () {
 //gallery
 let gallery = document.getElementById('lightgallery')
 lightGallery(gallery,{
+    plugins: [lgZoom, lgThumbnail],
     controls: true,
     counter: true,
     download: true,
@@ -72,8 +73,11 @@ lightGallery(gallery,{
     mode: 'lg-fade',
     closeOnTap: true,
     
+    
      
 })
+
+
 
 
 // lightGallery(document.getElementById('lightgallery'), {

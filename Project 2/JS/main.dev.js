@@ -54,6 +54,7 @@ $(function () {
 
 var gallery = document.getElementById('lightgallery');
 lightGallery(gallery, {
+  plugins: [lgZoom, lgThumbnail],
   controls: true,
   counter: true,
   download: true,
