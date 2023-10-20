@@ -52,7 +52,7 @@ $(function () {
   // })
 }); //gallery
 
-var gallery = document.getElementById('gallery');
+var gallery = document.getElementById('lightgallery');
 lightGallery(gallery, {
   controls: true,
   counter: true,
@@ -60,8 +60,20 @@ lightGallery(gallery, {
   arrows: true,
   escKey: true,
   autoplay: true,
-  autoplaySpeed: 1000
-});
+  autoplaySpeed: 1000,
+  mode: 'lg-fade',
+  closeOnTap: true
+}); // lightGallery(document.getElementById('lightgallery'), {
+//     plugins: [lgZoom, lgThumbnail],
+//     licenseKey: 'your_license_key',
+//     speed: 500,
+//     controls:true,
+//     counter:true,
+//     download: true,
+//     arrows: true,
+//     escKey: true,
+// });
+
 var customIcon = L.icon({
   iconUrl: './JS/images/marker.png',
   //shadowUrl: 'leaf-shadow.png',

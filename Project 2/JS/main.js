@@ -60,16 +60,33 @@ $(function () {
 })
 
 //gallery
-let gallery = document.getElementById('gallery')
+let gallery = document.getElementById('lightgallery')
 lightGallery(gallery,{
-    controls:true,
-    counter:true,
+    controls: true,
+    counter: true,
     download: true,
     arrows: true,
     escKey: true,
     autoplay: true,
     autoplaySpeed: 1000,
+    mode: 'lg-fade',
+    closeOnTap: true,
+    
+     
 })
+
+
+// lightGallery(document.getElementById('lightgallery'), {
+//     plugins: [lgZoom, lgThumbnail],
+//     licenseKey: 'your_license_key',
+//     speed: 500,
+//     controls:true,
+//     counter:true,
+//     download: true,
+//     arrows: true,
+//     escKey: true,
+    
+// });
 
 
 const customIcon = L.icon({

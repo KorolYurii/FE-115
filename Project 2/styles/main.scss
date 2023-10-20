@@ -560,7 +560,8 @@ body{
             .icon{
                 color: #FFF;
                 font-family: FontAwesome;
-                font-size: 14px;    
+                font-size: 14px;   
+                vertical-align: middle; 
             }
             &:hover{
                 -webkit-transform: scale(1.1);

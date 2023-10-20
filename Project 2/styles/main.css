@@ -506,6 +506,7 @@ body {
   color: #FFF;
   font-family: FontAwesome;
   font-size: 14px;
+  vertical-align: middle;
 }
 .news .container .arrivals_arrow_right:hover {
   -webkit-transform: scale(1.1);
