@@ -194,8 +194,10 @@ body {
 .headers {
   position: fixed;
   z-index: 10;
-  width: 100%;
-  top: 50px;
+  width: 98%;
+  top: 0px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 .headers-scrolled {
   background-color: #2C4058;
@@ -935,7 +937,31 @@ body {
   color: red;
 }
 
+@media screen and (max-width: 1250px) {
+  .galery .container .galery_wrapper {
+    margin: 0 auto;
+    width: 600px;
+    display: grid;
+    grid-template-rows: repeat(4, 214px);
+    grid-template-columns: repeat(2, 285px);
+    gap: 10px;
+    margin-bottom: 60px;
+  }
+  .galery .container .galery_wrapper a img {
+    max-width: 580px;
+    width: 100%;
+  }
+  .galery .container .galery_wrapper .large {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
 @media screen and (max-width: 1015px) {
+  .headers .container .nav .nav_list {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 968px) {
   .main_header .slider .slick-dots {
     right: -45%;
   }
@@ -1145,24 +1171,22 @@ body {
     margin-bottom: 40px;
   }
   .galery .container .galery_wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 10px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
+    margin: initial;
+    width: initial;
   }
   .galery .container .galery_wrapper .large {
     max-width: 580px;
     width: 100%;
   }
+  .galery .container .galery_btn {
+    margin-top: 20px;
+  }
+
   .footer .footer_container .form {
     background-image: initial;
     background-color: #fff;

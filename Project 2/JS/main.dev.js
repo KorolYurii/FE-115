@@ -102,13 +102,29 @@ L.marker([40.78159296396248, -73.96915881456673], {
 
 L.marker([51.486603466706335, 31.30802117611757], {
   icon: customIcon
-}).addTo(map).bindPopup("Гармати з бастіонів Чернігівської фортеці — пам'ятка історії місцевого значення в Чернігові, розташована на території Валу. Складається з 12 гармат XVI–XVIII століть.").openPopup(); //scroll
+}).addTo(map).bindPopup("Гармати з бастіонів Чернігівської фортеці — пам'ятка історії місцевого значення в Чернігові, розташована на території Валу. Складається з 12 гармат XVI–XVIII століть.").openPopup(); //scroll document.body.addEventListener('scroll', (event) => console.log(event.target.scrollTop))
 
-window.addEventListener('scroll', function (e) {
-  var header = document.getElementById('headers').classList;
-  var active_class = "headers-scrolled";
-  if (pageYOffset > 100) header.add(active_class);else header.remove(active_class);
-}); //validation
+document.body.addEventListener('scroll', function (event) {
+  if (event.target.scrollTop > 600) {
+    document.getElementById('headers').classList.add('headers_scrolled');
+  } else {
+    document.getElementById('headers').classList.remove('headers_scrolled');
+  }
+}); // window.addEventListener('scroll', function() {
+//     // let header = document.getElementById('headers').classList            
+//     // let active_class = "headers-scrolled"
+//     if(scrollY > 100) {
+//         document.getElementById('.headers').classList.add('headers_scrolled')
+//     }
+// })
+// window.addEventListener('scroll', function() {
+//     if (pageYOffset > 50) {
+//       document.querySelector('.header').classList.add('active')
+//     } else {
+//       document.querySelector('.header').classList.remove('active')
+//     }
+//   })
+//validation
 
 var NAME_MIN_LENGHT = 2;
 

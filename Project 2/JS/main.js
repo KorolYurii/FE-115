@@ -126,16 +126,35 @@ L.marker([51.486603466706335, 31.30802117611757], {icon: customIcon}).addTo(map)
 
 
 
-//scroll
-window.addEventListener('scroll', e => {
-    let header = document.getElementById('headers').classList            
-    let active_class = "headers-scrolled"
-    
-  if(pageYOffset > 100) header.add(active_class)
-  else header.remove(active_class)
-   
+//scroll document.body.addEventListener('scroll', (event) => console.log(event.target.scrollTop))
+document.body.addEventListener('scroll', (event) => {
+    if (event.target.scrollTop > 600) {
+        document.getElementById('headers').classList.add('headers_scrolled')
+    } else {
+        document.getElementById('headers').classList.remove('headers_scrolled')
+    }
 })
+    
+    
 
+
+// window.addEventListener('scroll', function() {
+//     // let header = document.getElementById('headers').classList            
+//     // let active_class = "headers-scrolled"
+    
+//     if(scrollY > 100) {
+//         document.getElementById('.headers').classList.add('headers_scrolled')
+//     }
+    
+   
+// })
+// window.addEventListener('scroll', function() {
+//     if (pageYOffset > 50) {
+//       document.querySelector('.header').classList.add('active')
+//     } else {
+//       document.querySelector('.header').classList.remove('active')
+//     }
+//   })
 
 
 
