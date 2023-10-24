@@ -35,7 +35,7 @@ function generateCards(resultsData){
 }
 
 function nextPage(event){
-    event.preventDefaut();
+    event.preventDefault();
     PAGE++;    
     gotoPage(PAGE)
 }
@@ -45,7 +45,7 @@ function gotoPage(page){
     searchMovie();
 }
 function goToEnd(event) {
-    event.preventDefaut();
+    event.preventDefault();
     PAGE = finalPage;
     gotoPage(PAGE)
 }
