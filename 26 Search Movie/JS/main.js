@@ -1,6 +1,6 @@
 const API_KEY = '27d9eece';
 
-const BASE_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&`;
+const BASE_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
 let PAGE = 1;
 let finalPage = 1;
 
@@ -9,11 +9,12 @@ function searchMovie() {
     
     const movieName = document.getElementById('search').value;
     if(movieName){
+       // console.log(movieName);
         axios.get(BASE_URL+`&s=${movieName}&page=${PAGE}`)
         .then(function (res) {
             console.log(res.data);
-            finalPage = Math.ceil(res.data.totalResult / 10);
-            
+            finalPage = Math.ceil(res.data.totalResults / 10);
+            console.log(finalPage);
             generateCards(res.data.Search);
         })
     }        
@@ -35,7 +36,7 @@ function generateCards(resultsData){
 
 function nextPage(event){
     event.preventDefaut();
-    PAGE++;
+    PAGE++;    
     gotoPage(PAGE)
 }
 function gotoPage(page){

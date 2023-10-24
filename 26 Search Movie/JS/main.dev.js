@@ -1,7 +1,7 @@
 "use strict";
 
 var API_KEY = '27d9eece';
-var BASE_URL = "http://www.omdbapi.com/?apikey=".concat(API_KEY, "&");
+var BASE_URL = "http://www.omdbapi.com/?apikey=".concat(API_KEY);
 var PAGE = 1;
 var finalPage = 1;
 
@@ -9,9 +9,11 @@ function searchMovie() {
   var movieName = document.getElementById('search').value;
 
   if (movieName) {
+    // console.log(movieName);
     axios.get(BASE_URL + "&s=".concat(movieName, "&page=").concat(PAGE)).then(function (res) {
       console.log(res.data);
-      finalPage = Math.ceil(res.data.totalResult / 10);
+      finalPage = Math.ceil(res.data.totalResults / 10);
+      console.log(finalPage);
       generateCards(res.data.Search);
     });
   }
