@@ -32,4 +32,18 @@ function pointerDown(event) {
   document.addEventListener('pointermove', pointerMove);
 }
 
-angle.addEventListener('pointerdown', pointerDown);
+angle.addEventListener('pointerdown', pointerDown); // table
+
+function sort(columnIndex) {
+  var table = document.getElementById("table");
+  var rows = Array.from(table.rows).slice(1);
+  var number = columnIndex === 0 || columnIndex === 2;
+  rows.sort(function (a, b) {
+    var aValue = number ? parseFloat(a.cells[columnIndex].textContent) : a.cells[columnIndex].textContent;
+    var bValue = number ? parseFloat(b.cells[columnIndex].textContent) : b.cells[columnIndex].textContent;
+    return aValue > bValue ? 1 : aValue < bValue ? -1 : 0;
+  });
+  rows.forEach(function (row) {
+    return table.tBodies[0].appendChild(row);
+  });
+}

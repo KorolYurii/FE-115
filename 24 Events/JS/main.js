@@ -38,3 +38,19 @@
  }
 
  angle.addEventListener('pointerdown', pointerDown)
+
+// table
+ function sort(columnIndex) {
+    const table = document.getElementById("table");
+    const rows = Array.from(table.rows).slice(1);
+    const number = columnIndex === 0 || columnIndex === 2;
+
+    rows.sort((a, b) => {
+        const aValue = number ? parseFloat(a.cells[columnIndex].textContent) : a.cells[columnIndex].textContent;
+        const bValue = number ? parseFloat(b.cells[columnIndex].textContent) : b.cells[columnIndex].textContent;
+
+        return aValue > bValue ? 1 : aValue < bValue ? -1 : 0;
+    });
+
+    rows.forEach((row) => table.tBodies[0].appendChild(row));
+}

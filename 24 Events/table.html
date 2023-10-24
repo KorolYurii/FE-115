@@ -4,13 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/table.css">
     
 </head>
 <body>
-    <button class="button" onclick="createPlayList()">list</button>
-    <div class="music" id="music"></div>
-    <script src="./JS/main.js"></script>
+    <div class="page_wrapper">
+        <div class="container">
+            <div class="table_wrapper">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th onclick="sort(0)">ID</th>
+                            <th onclick="sort(1)">Name</th>
+                            <th onclick="sort(2)">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Potato</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Coconut</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Cucumber</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Apple</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Cherry</td>
+                            <td>15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="./JS/main.js">
+        
+    </script>
+    
 </body>
 </html>

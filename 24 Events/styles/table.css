@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+.page_wrapper{
+    background-color: cadetblue;
+}
+.container{
+    width: 95%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.table_wrapper{
+    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+table{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    
+}
+#table, td, th{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+th:hover{
+    cursor: pointer;
+}
