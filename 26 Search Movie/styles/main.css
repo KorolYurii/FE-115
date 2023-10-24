@@ -5,6 +5,9 @@ body{
 a{
     cursor: pointer;
 }
+.page_wrapper{
+    padding-bottom: 1px;
+}
 .container{
     width: 90%;
     max-width: 1440px;
@@ -26,6 +29,8 @@ a{
     border: 2px solid #999;
     background-color: #fff;
     margin: 0 auto;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
 }
 .input_wrapper{
     padding-bottom: 5px;

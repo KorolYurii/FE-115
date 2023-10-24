@@ -1,7 +1,7 @@
 "use strict";
 
 var API_KEY = '27d9eece';
-var BASE_URL = "http://www.omdbapi.com/?apikey=".concat(API_KEY);
+var BASE_URL = "https://www.omdbapi.com/?apikey=".concat(API_KEY);
 var PAGE = 1;
 var finalPage = 1;
 

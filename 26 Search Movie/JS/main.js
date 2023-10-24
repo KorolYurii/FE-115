@@ -1,6 +1,6 @@
 const API_KEY = '27d9eece';
 
-const BASE_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
+const BASE_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 let PAGE = 1;
 let finalPage = 1;
 
