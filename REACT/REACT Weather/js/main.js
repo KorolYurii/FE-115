@@ -59,7 +59,7 @@ const weatherList = [
     {
         city: 'Lisbon',
         temp: '21',
-        icon: 'wi wi-day-sunny',
+        icon: 'wi-day-sunny',
         width: 'w-50',
         color: '#38b4e9'
     },
