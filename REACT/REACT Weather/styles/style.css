@@ -53,6 +53,9 @@ span{
     font-style: normal;
     font-weight: 400;    
 }
+p{
+    margin: initial;
+}
 .w-25{
     width: 25%;
 }
