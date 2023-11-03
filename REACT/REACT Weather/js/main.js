@@ -28,7 +28,7 @@ function GridItem() {
     let weatherItem;
     if(weatherList.length) {
         weatherItem = weatherList.map((card, city) => {
-            return <GridWeatherItem item={card} key={city}/>
+            return <GridWeatherItem item={card}  key={city}/>
         })
     }
     
