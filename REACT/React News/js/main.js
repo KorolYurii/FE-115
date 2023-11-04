@@ -57,6 +57,7 @@ function BlogSection() {
         </div>        
     )
 }
+
 function BlogContentItem(props) {
     const {text} = props.item
     return(
