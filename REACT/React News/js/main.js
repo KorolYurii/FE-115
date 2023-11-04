@@ -43,6 +43,7 @@ function Banner() {
     )
 }
 
+
 function BlogSection() {
     let blogItem;
     if(blogList.length){
