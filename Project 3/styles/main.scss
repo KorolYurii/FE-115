@@ -1,0 +1,71 @@
+
+body{
+    //background-image: url('../images/bd-min.webp');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-origin: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+.container{
+    width: 95%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    text-transform: capitalize;
+}
+.form{
+    max-width: 500px;
+    background-color: aliceblue;
+    max-height: 400px;
+    height: 100%;
+    padding: 20px 10px;
+    margin: 0 auto;
+    label{
+        display: block;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .input_search{
+        display: inline-block;
+        width: 97%;
+        border: 2px solid #3b3b3b;
+        border-radius: 5px;
+        padding: 4px;
+        margin-bottom: 10px;
+
+    }
+    .btn_search{
+        padding: 4px;
+        border-radius: 5px;
+        border: 2px solid #3b3b3b;
+        background: blue;
+        color: white;
+        text-transform: uppercase;
+        width: 22%;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        &:hover{
+            transition: all 0.3s;
+            transform: scale(1.1)
+        }
+    }
+}
+.nav_page_list{
+    display: flex;    
+    justify-content: center;
+    gap: 30px;
+}
+.nav_page_link{
+    border: #999 1px solid;
+    border-radius: 4px;
+    padding: 4px 5px;
+    text-transform: capitalize;
+    
+}
