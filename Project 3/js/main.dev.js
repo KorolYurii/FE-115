@@ -1,9 +1,8 @@
 "use strict";
 
 var API_KEY = '4c353af824d786d3afe3b55e6a4178eb';
-var BASE_URL = "http://api.openweathermap.org/data/2.5/weather?units=metric&appid=".concat(API_KEY); //const GEO_URL = `http://api.openweathermap.org/geo/1.0/direct?&appid=${API_KEY}`;
-
-var DAYS_URL = "http://api.openweathermap.org/data/2.5/forecast?&appid=".concat(API_KEY, "&units=metric");
+var BASE_URL = "http://api.openweathermap.org/data/2.5/weather?units=metric&appid=".concat(API_KEY);
+var DAYS_URL = "https://api.openweathermap.org/data/2.5/forecast?&appid=".concat(API_KEY, "&units=metric");
 
 function searchCity() {
   var cityName = document.getElementById('search').value;
@@ -31,18 +30,13 @@ function searchDaysCity() {
   if (cityName) {
     console.log(cityName);
     axios.get(DAYS_URL + "&q=".concat(cityName)).then(function (res) {
-      console.log(res.data); // const lat = res.data[0].lat;
-      // const lon = res.data[0].lon;            
-      //const days_url = `api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}`
-      // const days_url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
-
+      console.log(res.data);
       generateDaysCards(res.data);
     });
   }
 }
 
 function generateDaysCards(resultData) {
-  //const ICON_DAY_URL = `https://openweathermap.org/img/wn/${resultData.weather[0].icon}@2x.png`
   var html = "<ul class=\"day_list\">";
   resultData.list.forEach(function (el) {
     var ICON_DAY_URL = "https://openweathermap.org/img/wn/".concat(el.weather[0].icon, "@2x.png");
