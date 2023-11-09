@@ -3,7 +3,7 @@
 var API_KEY = '4c353af824d786d3afe3b55e6a4178eb';
 var BASE_URL = "http://api.openweathermap.org/data/2.5/weather?units=metric&appid=".concat(API_KEY); //const GEO_URL = `http://api.openweathermap.org/geo/1.0/direct?&appid=${API_KEY}`;
 
-var DAYS_URL = "https://api.openweathermap.org/data/2.5/forecast?&appid=".concat(API_KEY, "&units=metric");
+var DAYS_URL = "http://api.openweathermap.org/data/2.5/forecast?&appid=".concat(API_KEY, "&units=metric");
 
 function searchCity() {
   var cityName = document.getElementById('search').value;
