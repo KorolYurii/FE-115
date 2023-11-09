@@ -10,7 +10,7 @@ function searchCity() {
   if (cityName) {
     console.log(cityName);
     axios.get(BASE_URL + "&q=".concat(cityName)).then(function (res) {
-      console.log(res);
+      //console.log(res); 
       generateCards(res.data);
     });
   }
@@ -30,7 +30,7 @@ function searchDaysCity() {
   if (cityName) {
     console.log(cityName);
     axios.get(DAYS_URL + "&q=".concat(cityName)).then(function (res) {
-      console.log(res.data);
+      //console.log(res.data);
       generateDaysCards(res.data);
     });
   }
@@ -40,7 +40,11 @@ function generateDaysCards(resultData) {
   var html = "<ul class=\"day_list\">";
   resultData.list.forEach(function (el) {
     var ICON_DAY_URL = "https://openweathermap.org/img/wn/".concat(el.weather[0].icon, "@2x.png");
-    html = html + "\n        <li class='day_list_item'>\n            <span class=\"txt\">".concat(el.dt_txt, ",</span></br> \n            <span class=\"temp\">").concat(el.main.temp, " \xB0C</span></br> \n            <img src=\"").concat(ICON_DAY_URL, "\" ></br\n            <span class=\"description\">").concat(el.weather[0].description, "</span></br>   \n            <span class=\"wind\">").concat(el.wind.speed, " m/s</span></br>\n        </li>");
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var dateList = new Date(el.dt_txt);
+    var dateNumber = dateList.getDay(); //console.log(days[dateNumber]);
+
+    html = html + "\n        <li class='day_list_item'>\n            <span class=\"days\">".concat(days[dateNumber], ",</span></br> \n            <span class=\"txt\">").concat(el.dt_txt, ",</span></br> \n            <span class=\"temp\">").concat(el.main.temp, " \xB0C</span></br> \n            <img src=\"").concat(ICON_DAY_URL, "\" ></br\n            <span class=\"description\">").concat(el.weather[0].description, "</span></br>   \n            <span class=\"wind\">").concat(el.wind.speed, " m/s</span></br>\n        </li>");
   });
   html = html + '</ul>';
   document.getElementById('day_content').innerHTML = html;

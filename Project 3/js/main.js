@@ -12,7 +12,7 @@ function searchCity() {
        console.log(cityName);
         axios.get(BASE_URL+`&q=${cityName}`)
         .then(function (res) {
-            console.log(res); 
+            //console.log(res); 
                        
             generateCards(res.data);            
         })
@@ -47,7 +47,7 @@ function searchDaysCity() {
        console.log(cityName);
         axios.get(DAYS_URL+`&q=${cityName}`)
         .then(function (res) {
-            console.log(res.data);
+            //console.log(res.data);
            
                
             generateDaysCards(res.data)                     
@@ -61,8 +61,23 @@ function generateDaysCards(resultData){
 
     resultData.list.forEach(el => {
         const ICON_DAY_URL = `https://openweathermap.org/img/wn/${el.weather[0].icon}@2x.png`
+        let days = [
+            'Sunday',
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday'
+          ];
+          let dateList = new Date(el.dt_txt);
+          let dateNumber = dateList.getDay();
+        //console.log(days[dateNumber]);
+      
+
         html = html + `
         <li class='day_list_item'>
+            <span class="days">${days[dateNumber]},</span></br> 
             <span class="txt">${el.dt_txt},</span></br> 
             <span class="temp">${el.main.temp} °C</span></br> 
             <img src="${ICON_DAY_URL}" ></br

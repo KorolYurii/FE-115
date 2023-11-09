@@ -15,7 +15,6 @@ body {
 }
 
 .page_wraper {
-  margin-top: 70px;
   padding-bottom: 30px;
 }
 
@@ -36,7 +35,7 @@ h1 {
   border-bottom: 1px solid #000;
   max-height: 400px;
   height: 100%;
-  padding: 20px 10px;
+  padding: 70px 10px 20px;
   margin: 0 auto;
   width: 100%;
 }
@@ -63,7 +62,7 @@ h1 {
   justify-content: space-around;
 }
 .form .btn_container .btn_search {
-  padding: 4px;
+  padding: 5px;
   border-radius: 25px;
   border: 2px solid #3b3b3b;
   color: #000;
@@ -163,8 +162,21 @@ h1 {
   opacity: 0.7;
   color: #fff;
 }
+.day_list .day_list_item .temp {
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+}
+.day_list .day_list_item .days {
+  font-weight: 600;
+}
 .day_list .day_list_item .description {
   text-transform: capitalize;
+}
+.day_list .day_list_item .wind {
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
 }
 
 @media screen and (max-width: 550px) {
@@ -177,7 +189,24 @@ h1 {
   #content .list .temp {
     font-size: 3rem;
   }
-  .btn_search {
+  .form .btn_container .btn_search {
     font-size: 10px;
+  }
+
+  #day_content .day_list .day_list_item {
+    width: 100%;
+  }
+  #day_content .day_list .day_list_item .txt {
+    font-weight: 600;
+  }
+  #day_content .day_list .day_list_item .temp {
+    font-weight: 700;
+    font-size: 24px;
+    text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+  }
+  #day_content .day_list .day_list_item .wind {
+    font-weight: 700;
+    font-size: 24px;
+    text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
   }
 }
